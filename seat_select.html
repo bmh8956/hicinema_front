@@ -71,9 +71,10 @@
         }
 
         .container-seat {
-            min-width: 1000px;
+            min-width: 1100px !important;
             margin: 50px auto;
-            background-color: #050523;
+            /*background-color: #050523;*/
+            background-color: #101010;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -91,9 +92,11 @@
             background-color: #ffffff;
             margin: 4px;
             cursor: pointer;
-            border-radius: 5px;
+            /*border-radius: 5px;*/
             text-align: center;
             color: blue;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
         }
 
         .seat.selected {
@@ -120,6 +123,28 @@
 
         #submit button {
             float: right;
+        }
+        .seats {
+            text-align: center;
+        }
+        #submit {
+            padding-top: 3%;
+        }
+
+        .screens{
+            background-color: #fff;
+            margin: 25px;
+            padding: 5px;
+            width: 300px;
+            height: 150px;
+            box-shadow: 0 3px 10px rgb(255 255 255 / 70%);
+        }
+
+        .window {
+            text-align: -webkit-center;
+        }
+        .seat_row:nth-child(3), .seat_row:nth-child(6), .seat_row:nth-child(9), .seat_row:nth-child(12) {
+            padding-right: 0;
         }
 
     </style>
@@ -165,7 +190,7 @@
 <!-- Shopping Cart -->
 <div class="shopping-cart section">
     <div class="container">
-        <div class="container-seat">
+        <div class="col-12 container-seat">
             <div class="seat_row">
                 <div class="col-12">
                     <div class="screen">
@@ -194,13 +219,16 @@
                         <option value="8">8</option>
                     </select>
                         <h2>Screen</h2>
+                        <div class="window">
+                                <div class="screens"></div>
+                        </div>
                     </div>
                     <div class="seats" onclick="selectSeat(event)">
                         <!-- Seats will be dynamically added here -->
                     </div>
                     <div id="submit">
                         <span id="total_price">합계 : 0</span>
-                        <button type="button" onclick="next()">선택</button>
+                        <button type="button" onclick="next()" class="btn">선택</button>
                     </div>
                 </div>
             </div>
