@@ -1,0 +1,381 @@
+.preloader {
+  display: none;
+}
+.middle-inner {
+  /* background-color: #000000 !important; */
+  background-color: transparent !important;
+  position: fixed !important;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 0 !important;
+  height: 121px !important;
+}
+
+/* 헤더 고정  ==============================*/
+.middle-inner.sticky {
+  position: fixed ;
+  background-color: #fff !important;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.header_content.sticky {
+  background-color: #fff;
+}
+
+.logologo.sticky {
+  color: #000000 !important;
+}
+
+.logologo:before.sticky  {
+  display: none ;
+}
+
+.memberInfo.sticky li > a > i  {
+  /* color: #000000; */
+  display: none;
+} 
+
+.memberInfo.sticky li > a > span  {
+color: #000000;
+display: none;
+}
+
+/* ============================================== */
+
+
+
+.header_content {
+  /* border: solid 1px red; */
+  /* background-image: url(../images/IfOnly_1920774.jpg); */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.top_navmenu.sticky{
+  display: none;
+}
+
+.top_navmenu {
+  /* border: solid 1px blue; */
+  width: 98%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 20px;
+}
+
+/* logo ======= */
+.hicinema_logo {
+  display: flex;
+  align-items: flex-end;
+  /* border: solid 1px salmon; */
+  /* padding: 10px; */
+  width: 40%;
+  height: 60%;
+  margin-left: 40px;
+  padding-top: 0 !important;
+  
+}
+
+.logologo {
+  font-family: Russo One;
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-size: 3em;
+  /* text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.4); 그림자 효과 */
+  position: relative;
+}
+  
+
+.logologo:before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 0.83em;
+  transform: rotateX(180deg);
+  transform-origin: bottom;
+  background: linear-gradient(to top, #ffffff 0%, transparent 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color:transparent;
+  opacity: 0.7;
+  
+
+}
+.logologo a {
+  padding: 0px !important;
+  /* margin-top: 50px; */
+}
+/* .logo_content {
+  color: #ffffff;
+  font-size: 1em;
+  padding-left: 10px;
+
+} */
+/* .member_menu {
+  display: inline-block;
+  border: solid 1px rgb(219, 255, 99);
+  height: 90%;
+  width: 50%;
+} */
+
+.bottom_navmenu {
+  /* border: solid 1px rgb(27, 255, 141); */
+  width: 98%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.memberInfo {
+  display: flex;
+  align-items: center;
+}
+
+/* .memberInfo > li {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  left: 430px;
+} */
+.memberInfo > li > a {
+  display: block;
+  position: relative;
+  padding-bottom: 19px;
+  margin: 40px 22px 40px 22px;
+}
+.memberInfo > li > a > i {
+  font-size: 1.2em;
+  color: #ffffff;
+  padding: 3px;
+}
+.memberInfo > li > a > span {
+  position: absolute;
+  color: #ffffff;
+  line-height: 1.462em;
+  white-space: nowrap;
+  transform: translate(-50%, 0);
+  bottom: 0;
+  left: 50%;
+  font-size: 0.7em;
+  margin-top: 8px;
+}
+
+.header_line {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 15px;
+  /* background-color: #ffffff; */
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.7) 17%,
+    rgba(255, 255, 255, 0.8) 86%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: gra 4s ease infinite;
+
+}
+
+@keyframes gra{
+  0%{
+      opacity: 0;
+  }
+  50%{
+    opacity: 1;
+}
+  100%{
+      opacity: 0;
+  }
+}
+
+/* nav ===================================================== */
+
+/* 헤더 고정시 nav css 변경 ================================== */
+#topMenu.sticky ul li  {
+  color: #000000;
+}
+
+.menuLink.sticky {
+  color: #000000;
+}
+
+.topMenuLi:hover.sticky .menuLink  {
+  color: rgb(64, 11, 137);
+}
+
+.submenu.sticky {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 12%,
+    rgba(255, 255, 255, 0.5) 28%,
+    rgba(255, 255, 255, 0.5) 65%,
+    rgba(255, 255, 255, 0.3) 86%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+}
+
+.submenuLink:hover.sticky {
+  color: #3e1463;
+}
+
+
+
+#topMenu {
+  height: 30px;
+  width: 80%; /* 하위 메뉴와 동일하게 맞춤 */
+  position: relative;
+  background-color: #bb7f7f00;
+  padding-left: 50px;
+}
+#topMenu ul {
+  /* 메인 메뉴 안의 ul을 설정함: 상위메뉴의 ul+하위 메뉴의 ul */
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  left: 0px;
+}
+#topMenu ul li {
+  /* 메인 메뉴 안에 ul 태그 안에 있는 li 태그의 스타일 적용(상위/하위메뉴 모두) */
+  color: #ffffffb9;
+  background-color: #20202000;
+  float: left;
+  line-height: 30px;
+  vertical-align: middle;
+  text-align: center;
+
+  /* position: relative;          */
+}
+.menuLink,
+.submenuLink {
+  /* 상위 메뉴와 하위 메뉴의 a 태그에 공통으로 설정할 스타일 */
+  text-decoration: none;
+  display: block;
+  width: 150px;
+  font-size: 12px;
+  /* font-weight: bold;                   */
+  /* font-family: "Trebuchet MS", Dotum;  */
+}
+.menuLink {
+  /* 상위 메뉴의 글씨색을 흰색으로 설정 */
+  color: white;
+}
+.topMenuLi:hover .menuLink {
+  /* 상위 메뉴의 li에 마우스오버 되었을 때 스타일 설정 */
+  color: rgb(255, 255, 255);
+  /* background-color: #4d4d4d; */
+}
+.longLink {
+  /* 좀 더 긴 메뉴 스타일 설정 */
+  width: 100px;
+}
+.submenuLink {
+  
+  background-color: #dddddd00; /* 배경색 변경 */
+  /* border: solid 1px black;     테두리 삭제 */
+  /* margin-right: -1px;          공백 보정 삭제 */
+}
+
+.submenu {
+  /* 하위 메뉴 스타일 설정 */
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.2s;
+  -webkit-transition: height 0.2s;
+  -moz-transition: height 0.2s;
+  -o-transition: height 0.2s;
+  width: 1110px;
+  /* left: 0;      */
+  right: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.3) 12%,
+    rgba(0, 0, 0, 0.5) 28%,
+    rgba(0, 0, 0, 0.5) 65%,
+    rgba(0, 0, 0, 0.3) 86%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* [추가] 하위 메뉴 전체에 배경색 설정 */
+  /* transform: translate(-50% ,); */
+}
+.submenu li {
+  /* display: inline-block; */
+  /* position: absolute; */
+}
+.topMenuLi:hover .submenu {
+  height: 32px;
+}
+
+.submenuLink:hover {
+  color: rgb(185, 122, 224);
+  /* border-bottom:solid 2px  #f0cbff;   */
+}
+
+/* search form ===============================*/
+
+/* search form  헤더고정시 설정 ===============================*/
+
+
+.search_form {
+  /* border: solid 1px #dddddd; */
+  margin-right: 30px;
+  width: 15%;
+  /* margin-bottom: 13px; */
+  position: relative;
+  bottom: 5px;
+}
+
+.search {
+  border-bottom: solid 1px #ffffffc8;
+}
+
+.search > form > input {
+  border: none;
+  background-color: #20202000;
+  margin-right: 6px;
+}
+
+.search > form > input:focus {
+  border: none;
+  color: #ffffff;
+  outline: none;
+}
+
+input::placeholder {
+  color: #ffffff;
+  font-size: 1em;
+  /* font-weight: 100; */
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+/* search button ===============================*/
+.button {
+  background: rgba(32, 32, 32, 0);
+  border: 0;
+  position: absolute;
+  right: 2px;
+  top: 9px;
+}
+.search > form > button > i {
+  font-size: 1.3em;
+  color: #ffffff;
+}

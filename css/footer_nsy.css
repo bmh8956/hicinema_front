@@ -1,0 +1,90 @@
+.footer{
+	background:#222;
+  /* position: relative !important; */
+
+}
+body{
+  margin:0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.footer_area{
+  position: absolute !important;
+  bottom:0 ;
+  width: 100%;
+  background-color: #545454;
+}
+.footer-container{
+  padding: 60px
+}
+.first-line{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  align-items:flex-start;
+}
+
+
+ul{
+  display: flex;
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+.sns-icon{
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.second-line{
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+.second-line-container{
+  width: 75%;
+}
+.menus{
+  margin-bottom:20px;
+}
+.menus li{
+  margin-right:30px;
+  font-weight:bold;
+}
+.company-info li{
+  margin-right: 20px;
+  font-size: 14px;
+}
+.company-contact li{
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.second-line-container-bottom{
+  color: #ffffff;
+  font-size: 13px;
+  margin: 20px 0;
+}
+.second-line-container-bottom div{
+  margin:5px 0
+}
+.info{
+  margin-right:20px
+}
+.phone-number{
+  font-weight: 200;
+  font-size:20px ;
+  margin-bottom: 10px;
+}
+.work-hour li{
+  margin: 10px 0;
+}
+.work-hour span{
+  margin-right:10px
+}
+
