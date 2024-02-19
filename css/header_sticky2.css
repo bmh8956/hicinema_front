@@ -2,7 +2,7 @@
   display: none;
 }
 #after .middle-inner {
-  background-color: #ffffff !important;
+  background-color: #fcfbae !important;
   /* background-color: transparent !important; */
   position: fixed !important;
   margin: 0 auto;
@@ -11,13 +11,14 @@
   z-index: 10;
   padding: 0 !important;
   height: 60px !important;
+  
 }
 
 #after .header_content {
-  /* border: solid 1px red; */
+  border: solid 1px red;
   /* background-image: url(../images/IfOnly_1920774.jpg); */
   width: 100%;
-  height: 100%;
+  height: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,47 +58,7 @@
   /* margin-top: 50px; */
 }
 
-#after .bottom_navmenu {
-  /* border: solid 1px rgb(27, 255, 141); */
-  width: 98%;
-  height: 75px;
-  display: flex;
-  justify-content: space-between;
-}
 
-#after .memberInfo {
-  display: flex;
-  align-items: center;
-}
-
-/* .memberInfo > li {
-  display: inline-block;
-  position: relative;
-  top: 10px;
-  left: 430px;
-} */
-#after .memberInfo > li > a {
-  display: block;
-  position: relative;
-  padding-bottom: 19px;
-  margin: 40px 22px 40px 22px;
-}
-#after .memberInfo > li > a > i {
-  font-size: 1.2em;
-  color: #ffffff;
-  padding: 3px;
-}
-#after .memberInfo > li > a > span {
-  position: absolute;
-  color: #ffffff;
-  line-height: 1.462em;
-  white-space: nowrap;
-  transform: translate(-50%, 0);
-  bottom: 0;
-  left: 50%;
-  font-size: 0.7em;
-  margin-top: 8px;
-}
 
 /* nav ===================================================== */
 /* nav ================================ */
@@ -113,7 +74,7 @@
 }
 #after #nav2 > ul > li {
   display: inline-block;
-  vertical-align: top;
+  /* vertical-align: top; */
 }
 #after #nav2 > ul > li > a {
   display: block;
@@ -129,7 +90,7 @@
 }
 #after #nav2 > ul > li > a:before {
   content: "";
-  opacity: 0.4;
+  opacity: 0.7;
   position: absolute;
   left: 0;
   top: 50%;
@@ -149,18 +110,11 @@
   right: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  top: 84px;
-  height: 36.5px;
+  top: 80px;
+  height: 38px;
   text-align: center;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 2%,
-    rgba(255, 255, 255, 0.858) 25%,
-    rgb(255, 255, 255) 52%,
-    rgba(255, 255, 255, 0.929) 82%,
-    rgba(255, 255, 255, 0) 97%
-  );
+  background: rgb(215,215,215);
+background: linear-gradient(90deg, rgba(215,215,215,0) 0%, rgba(215,215,215,1) 28%, rgba(215,215,215,1) 65%, rgba(215,215,215,1) 90%, rgba(215,215,215,0) 100%);
   width: 100%;
 }
 #after #nav2 > ul > li > div > ul {
@@ -179,7 +133,7 @@
 
 #after #nav2 > ul > li > div > ul > li > a {
   display: block;
-  height: 36px;
+  height: 50px;
   line-height: 36px;
   padding: 0 5px;
   color: #000000;
@@ -196,17 +150,10 @@
   z-index: 50;
   left: 0;
   right: 0;
-  top: 36px;
+  top: 38px;
   text-align: center;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 4%,
-    rgba(255, 255, 255, 0.834) 28%,
-    rgba(255, 255, 255, 0.895) 52%,
-    rgba(255, 255, 255, 0.76) 81%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: rgb(152,152,152);
+background: linear-gradient(90deg, rgba(152,152,152,1) 0%, rgba(152,152,152,1) 27%, rgba(152,152,152,1) 53%, rgba(152,152,152,1) 79%, rgba(152,152,152,1) 100%);
 }
 #after #nav2 > ul > li > div > ul > li > div > ul {
   opacity: 0;
@@ -232,7 +179,8 @@
 #after #nav2 > ul > li.active > a,
 #after #nav2 > ul > li.ov > a,
 #after #nav2 > ul > li:hover > a {
-  height: 60px;
+  margin-top:10px;
+  height: 46px;
   border-bottom: 4px solid #fb66bb;
 }
 #after #nav2 > ul > li.active > div,
