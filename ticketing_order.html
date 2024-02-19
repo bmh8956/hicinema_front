@@ -60,258 +60,9 @@
     <link rel="stylesheet" href="#" id="colors">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/gr.css">
+    <link rel="stylesheet" href="css/ticketing_order.css">
     <style>
-        .gr_all {
-            background: green url("https://www.lottecinema.co.kr/NLCHS/Content/images/common/grade_all.png") 0 0 no-repeat;
-            background-size: 100%;
-            content: "";
-            width: 22px;
-            height: 22px;
-            border-radius: 3px;
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        .gr_12 {
-            background: #e9b630 url("https://www.lottecinema.co.kr/NLCHS/Content/images/common/grade_12.png") 0 0 no-repeat;
-            background-size: 100%;
-            content: "12";
-            width: 22px;
-            height: 22px;
-            border-radius: 3px;
-            display: inline-block;
-            vertical-align: middle;
-            font-family: "Roboto", serif;
-        }
-
-        .gr_15 {
-            background: #dd7430 url("https://www.lottecinema.co.kr/NLCHS/Content/images/common/grade_15.png") 0 0 no-repeat;
-            background-size: 100%;
-            content: "12";
-            width: 22px;
-            height: 22px;
-            border-radius: 3px;
-            display: inline-block;
-            vertical-align: middle;
-            font-family: "Roboto", serif;
-        }
-
-        .gr_18 {
-            background: #d92b36 url("https://www.lottecinema.co.kr/NLCHS/Content/images/common/grade_18.png") 0 0 no-repeat;
-            background-size: 100%;
-            content: "12";
-            width: 22px;
-            height: 22px;
-            border-radius: 3px;
-            display: inline-block;
-            vertical-align: middle;
-            font-family: "Roboto", serif;
-        }
-
-        .gr_none {
-            background: #484848 url("https://www.lottecinema.co.kr/NLCHS/Content/images/common/grade_non.png") 0 0 no-repeat;
-            background-size: 100%;
-            content: "12";
-            width: 22px;
-            height: 22px;
-            border-radius: 3px;
-            display: inline-block;
-            vertical-align: middle;
-            font-family: "Roboto", serif;
-        }
-
-        .movie-list-info {
-            display: block;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
-
-        .shopping-cart .ticketing span {
-            padding-left: 5%;
-        }
-
-        .shopping-cart .ticketing {
-            float: left;
-        }
-
-        .theater-select, .theater-location {
-            float: left;
-            width: 50%;
-        }
-
-        .theater-location ul li.loc:hover, .theater-select ul li.theaters:hover {
-            border: 5px solid darkred;
-            font-size: 18px;
-        }
-
-        .theater-location ul li.loc.active, .theater-select ul li.theaters.active {
-            border: 5px solid darkred;
-            font-size: 18px;
-        }
-
-        .theater-location ul li.loc, .theater-select ul li.theaters {
-            padding: 3% 0 3% 0;
-            border-radius: 5%;
-            font-size: 13px;
-        }
-
-        .movie-select ul li.movies {
-            padding: 5% 0 5% 0;
-            font-size: 15px;
-        }
-
-        .movie-select ul li.movies:hover, .movie-select ul li.movies.active {
-            border: 5px solid darkred;
-            font-size: 21px;
-        }
-
-        .ticketing-header {
-            padding-bottom: 1%;
-        }
-
-        .ticketing-header .ticketing-title {
-            text-align: center;
-            background-color: black;
-            border-radius: 5%;
-            color: white;
-            border: 2px solid white;
-        }
-
-        .ticketing li {
-            cursor: pointer;
-        }
-
-        /* datepicker start */
-
-        .ui-datepicker-inline {
-            display: none !important;
-        }
-
-        .ui-datepicker-today {
-            border-left: 1px solid rgba(0, 0, 0, 0.24);
-            border-right: 1px solid rgba(0, 0, 0, 0.24);
-        }
-
-        #datepicker_row {
-            white-space: nowrap; /* 공백 처리 방지 */
-            overflow-x: auto; /* 수평 스크롤 표시 */
-            overflow-y: hidden; /* 세로 스크롤 숨김 */
-            width: 100%; /* 가로 너비 설정 */
-            text-align: center;
-        }
-
-        .ui-datepicker-week-end.highlighted p {
-            color: red !important;
-        }
-
-        #datepicker_row div {
-            padding: 1%;
-            display: inline-block; /* 자식 div를 인라인 블록 요소로 표시 */
-        }
-
-        .ui-state-disabled {
-            display: none !important;
-        }
-
-        div.year-month {
-            width: 100%;
-            text-align: center;
-        }
-
-        #datepicker_row div {
-            cursor: pointer;
-        }
-
-        .ui-datepicker-today {
-            border-left: 1px solid #cccccc;
-            border-right: 1px solid #cccccc;
-            font-size: 15px;
-        }
-
-        #datepicker_row div:hover, #datepicker_row div.active {
-            border-left: 2px solid darkred;
-            border-right: 2px solid darkred;
-            font-size: 15px;
-        }
-
-        #datepicker_row div:hover, #datepicker_row div.active {
-            background-color: #e7e7e7;
-        }
-
-        #datepicker_row #prev, #datepicker_row #next {
-            background: #f6f6f6;
-            border: 0;
-        }
-
-        /* datepicker end */
-
-        /* 상영시간 start */
-        .reservations {
-            border-top: 1px solid black;
-        }
-
-        .reservations li {
-            padding: 2% 0 2% 0;
-            border-bottom: 1px solid gray;
-        }
-
-        .reservations li:hover, .reservations li.active {
-            font-size: 16px;
-            background-color: #d0d0d0;
-        }
-
-        .reservations li:hover .movie-title, .reservations li.active .movie-title {
-            font-size: 23px;
-        }
-
-        .screen-info .screen-time {
-            padding-right: 3%;
-        }
-
-        .screen-info .movie-content span {
-            padding: 0;
-            margin: 0;
-        }
-
-        .screen-info .screen-time, .screen-info .movie-content {
-            float: left;
-        }
-
-        .screen-details {
-            float: right;
-        }
-
-        .screen-info .screen-movie, .screen-info .screen-time, .screen-info .screen-movie > div {
-            height: 72px;
-        }
-
-        .screen-info .movie-title, .screen-info .movie-detail-info, .screen-info .screen-detail, .screen-info .screen-seat {
-            height: 50%;
-        }
-
-        .screen-info .screen-seat {
-            display: flex;
-            flex-direction: column-reverse;
-            align-items: flex-end;
-        }
-
-        .screen-info .movie-detail-info {
-            display: flex;
-            flex-direction: initial;
-            align-items: flex-end;
-        }
-
-        .screen-info {
-            margin: 0 2% 0 2%;
-        }
-
-        .movie-title {
-            font-size: 18px;
-        }
-
-        /* 상영시간 end */
-
 
     </style>
 </head>
@@ -358,7 +109,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="row">
-                    <div class="col-lg-5 ticketing">
+                    <div class="col-lg-7 ticketing">
                         <div class="ticketing-header">
                             <div class="ticketing-title">
                                 예매정보
@@ -366,17 +117,58 @@
                         </div>
                         <div>
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-lg-5">
                                     <img src="https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202401/20701_103_1.jpg"
                                          alt="" srcset="">
                                 </div>
                                 <div class="col-lg-6">
-                                    <div>
-                                        <h3>웡카</h3>
+                                    <div class="movie-title">
+                                        <span class="gr_all"></span>
+                                        <span>영화제목</span>
                                     </div>
-                                    <div>
-
+                                    <div class="movie-detail-info">
+                                        <div class="row">
+                                            <span>일시 : </span>
+                                            <div class="col-lg-9">
+                                                2024-02-19 (월) 22:30 ~ 24:36
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <span>영화관 : </span>
+                                            <div class="col-lg-9">
+                                                수유 4관 (Laser) - 2D
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <span>인원 : </span>
+                                            <div class="col-lg-9">
+                                                성인1
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <span>좌석 : </span>
+                                            <div class="col-lg-9">
+                                                C7
+                                            </div>
+                                        </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 ticketing">
+                        <div class="ticketing-header">
+                            <div class="ticketing-title">
+                                결제수단
+                            </div>
+                        </div>
+                        <div class="payment-icon">
+                            <div class="row pay-icon">
+                                <div class="payment-radio">
+                                    <input type="radio" name="" id="" checked>
+                                </div>
+                                <div class="p-icon">
+                                    <img src="images/payment_icon_yellow_medium.png" alt="" srcset="">
                                 </div>
                             </div>
                         </div>
@@ -384,21 +176,17 @@
                     <div class="col-lg-3 ticketing">
                         <div class="ticketing-header">
                             <div class="ticketing-title">
-                                결제수단
-                            </div>
-                        </div>
-                        <div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4 ticketing">
-                        <div class="ticketing-header">
-                            <div class="ticketing-title">
                                 결제하기
                             </div>
                         </div>
                         <div>
-
+                            <div class="payment-info">
+                                <span>결제금액 &nbsp&nbsp:</span>
+                                <span>15000 원</span>
+                            </div>
+                        </div>
+                        <div class="payment-btn">
+                            <button type="button" class="btn">결제</button>
                         </div>
                     </div>
                 </div>
@@ -407,126 +195,6 @@
     </div>
 </div>
 <!--/ End Shopping Cart -->
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ti-close"
-                                                                                                  aria-hidden="true"></span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="row no-gutters">
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                        <!-- Product Slider -->
-                        <div class="product-gallery">
-                            <div class="quickview-slider-active">
-                                <div class="single-slider">
-                                    <img src="images/modal1.jpg" alt="#">
-                                </div>
-                                <div class="single-slider">
-                                    <img src="images/modal2.jpg" alt="#">
-                                </div>
-                                <div class="single-slider">
-                                    <img src="images/modal3.jpg" alt="#">
-                                </div>
-                                <div class="single-slider">
-                                    <img src="images/modal4.jpg" alt="#">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Product slider -->
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                        <div class="quickview-content">
-                            <h2>Flared Shift Dress</h2>
-                            <div class="quickview-ratting-review">
-                                <div class="quickview-ratting-wrap">
-                                    <div class="quickview-ratting">
-                                        <i class="yellow fa fa-star"></i>
-                                        <i class="yellow fa fa-star"></i>
-                                        <i class="yellow fa fa-star"></i>
-                                        <i class="yellow fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <a href="#"> (1 customer review)</a>
-                                </div>
-                                <div class="quickview-stock">
-                                    <span><i class="fa fa-check-circle-o"></i> in stock</span>
-                                </div>
-                            </div>
-                            <h3>$29.00</h3>
-                            <div class="quickview-peragraph">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste laborum ad
-                                    impedit pariatur esse optio tempora sint ullam autem deleniti nam in quos qui nemo
-                                    ipsum numquam.</p>
-                            </div>
-                            <div class="size">
-                                <div class="row">
-                                    <div class="col-lg-6 col-12">
-                                        <h5 class="title">Size</h5>
-                                        <select>
-                                            <option selected="selected">s</option>
-                                            <option>m</option>
-                                            <option>l</option>
-                                            <option>xl</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6 col-12">
-                                        <h5 class="title">Color</h5>
-                                        <select>
-                                            <option selected="selected">orange</option>
-                                            <option>purple</option>
-                                            <option>black</option>
-                                            <option>pink</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="quantity">
-                                <!-- Input Order -->
-                                <div class="input-group">
-                                    <div class="button minus">
-                                        <button type="button" class="btn btn-primary btn-number" disabled="disabled"
-                                                data-type="minus" data-field="quant[1]">
-                                            <i class="ti-minus"></i>
-                                        </button>
-                                    </div>
-                                    <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000"
-                                           value="1">
-                                    <div class="button plus">
-                                        <button type="button" class="btn btn-primary btn-number" data-type="plus"
-                                                data-field="quant[1]">
-                                            <i class="ti-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <!--/ End Input Order -->
-                            </div>
-                            <div class="add-to-cart">
-                                <a href="#" class="btn">Add to cart</a>
-                                <a href="#" class="btn min"><i class="ti-heart"></i></a>
-                                <a href="#" class="btn min"><i class="fa fa-compress"></i></a>
-                            </div>
-                            <div class="default-social">
-                                <h4 class="share-now">Share:</h4>
-                                <ul>
-                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a class="youtube" href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                                    <li><a class="dribbble" href="#"><i class="fa fa-google-plus"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Modal end -->
 
 <!-- Start Footer Area -->
 
@@ -573,109 +241,9 @@
 <script src="js/active.js"></script>
 
 <script>
-    let datepicker = async () => {
-        $("#datepicker").datepicker({
-            showOtherMonths: true,
-            minDate: 0,
-            monthNames: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"], // 숫자로 된 월 이름 배열
-            // 다른 옵션들...
-            beforeShowDay: function (date) {
-                // Check if the date is Sunday (0)
-                if (date.getDay() === 0) {
-                    // Apply highlighted class to Sundays
-                    return [true, "highlighted", ""];
-                }
-                // Otherwise, return as is
-                return [true, "", ""];
-            }
-        });
-        await draw_datepicker();
-    }
 
-    let draw_datepicker = () => {
-        let date = document.querySelectorAll(".ui-datepicker-calendar tbody td");
-        let d = [];
-        let next = document.createElement("button")
-        let prev = document.createElement("button")
-        next.textContent = '▶'
-        next.id = 'next'
-        prev.textContent = '◀'
-        prev.id = 'prev'
-        let years = document.querySelector(".ui-datepicker-year").textContent;
-        let months = document.querySelector(".ui-datepicker-month").textContent;
-        document.getElementById("datepicker_row").append(prev)
-        for (let k of date) {
-            let a = k.children[0];
-            let obj = {};
-            obj['tag'] = a.tagName;
-            obj['date'] = a.textContent;
-            obj['class'] = Array.from(k.classList);
-            let tag1 = document.createElement("div")
-            for (let c of obj['class']) {
-                tag1.classList.add(c)
-            }
-            // tag1.style.float = "left";
-
-            let dt = years + "-" + months + "-" + a.textContent;
-            let dw = new Date(dt).getDay()
-            let arr_dw = ["일", "월", "화", "수", "목", "금", "토", "일"]
-
-            tag1.innerHTML = "<strong><p>" + a.textContent + "</p><p>" + arr_dw[dw] + "</p></strong>";
-            document.getElementById("datepicker_row").append(tag1)
-            // document.getElementById("datepicker_row").append(tag1)
-            d.push(obj);
-        }
-        document.getElementById("datepicker_row").append(next)
-        if (document.getElementById("prev")) {
-            if (Number(months) === new Date().getMonth() + 1) {
-                document.getElementById("prev").style.display = 'none';
-            }
-        }
-        let month_val = months;
-        let year_val = years;
-        if (months.indexOf("0") == 0) {
-            month_val = months.replace("0", "")
-        }
-        // document.getElementById("month_val").textContent = month_val + " 월"
-        document.getElementById("year_val").textContent = year_val + "년  " + month_val + "월"
-
-        next.onclick = () => {
-            document.querySelector(".ui-datepicker-next.ui-corner-all").click();
-            document.getElementById("datepicker_row").innerHTML = ''
-            draw_datepicker()
-        }
-        prev.onclick = () => {
-            document.querySelector(".ui-datepicker-prev.ui-corner-all").click();
-            document.getElementById("datepicker_row").innerHTML = ''
-            draw_datepicker()
-        }
-    }
-
-    let li_click = () => {
-        let ul = document.querySelectorAll(".ticketing ul")
-
-        for (let u of ul) {
-            u.addEventListener("click", function (e) {
-                if (e.target.tagName === 'LI' || e.target.closest("LI")) {
-                    let tag;
-                    if (e.target.tagName !== "LI") {
-                        tag = e.target.closest("LI")
-                    } else {
-                        tag = e.target
-                    }
-                    let bro = document.getElementsByClassName(tag.classList[0])
-                    for (let b of bro) {
-                        b.classList.remove('active')
-                    }
-                    tag.classList.add('active')
-                }
-            })
-        }
-    }
 
     $(document).ready(function () {
-        datepicker();
-        li_click();
 
     });
 </script>
