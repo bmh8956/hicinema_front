@@ -2277,5 +2277,20 @@
 <!-- Active JS -->
 <script src="js/active.js"></script>
 
+<script>
+
+    window.onload = () => {
+        // 모바일의 경우
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            let images = document.getElementsByClassName("default-img");
+            for (let img of images) {
+                img.addEventListener("click", function (e) {
+                    location.href = "movie_detail.html";
+                })
+            }
+        }
+    }
+</script>
+
 </body>
 </html>
