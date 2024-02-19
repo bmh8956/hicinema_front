@@ -1,0 +1,284 @@
+.preloader {
+  display: none;
+}
+.middle-inner {
+  background-color: #ffffff !important;
+  /* background-color: transparent !important; */
+  position: fixed !important;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 0 !important;
+  height: 60px !important;
+}
+
+.header_content {
+  /* border: solid 1px red; */
+  /* background-image: url(../images/IfOnly_1920774.jpg); */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff !important;
+}
+
+.top_navmenu {
+  /* border: solid 1px blue; */
+  width: 98%;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 20px;
+}
+
+/* logo ======= */
+.hicinema_logo {
+  display: flex;
+  align-items: flex-end;
+  /* border: solid 1px salmon; */
+  /* padding: 10px; */
+  padding-top: 0 !important;
+}
+
+.logologo {
+  font-family: Russo One;
+  letter-spacing: 2px;
+  color: #5c1e91;
+  font-size: 3em;
+  position: relative;
+}
+
+.logologo a {
+  padding: 0px !important;
+  /* margin-top: 50px; */
+}
+
+.bottom_navmenu {
+  /* border: solid 1px rgb(27, 255, 141); */
+  width: 98%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.memberInfo {
+  display: flex;
+  align-items: center;
+}
+
+/* .memberInfo > li {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  left: 430px;
+} */
+.memberInfo > li > a {
+  display: block;
+  position: relative;
+  padding-bottom: 19px;
+  margin: 40px 22px 40px 22px;
+}
+.memberInfo > li > a > i {
+  font-size: 1.2em;
+  color: #ffffff;
+  padding: 3px;
+}
+.memberInfo > li > a > span {
+  position: absolute;
+  color: #ffffff;
+  line-height: 1.462em;
+  white-space: nowrap;
+  transform: translate(-50%, 0);
+  bottom: 0;
+  left: 50%;
+  font-size: 0.7em;
+  margin-top: 8px;
+}
+
+/* nav ===================================================== */
+/* nav ================================ */
+#nav {
+  /* width: 980px; */
+  margin: 1px auto 0;
+  text-align: center;
+}
+#nav > ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#nav > ul > li {
+  display: inline-block;
+  vertical-align: top;
+}
+#nav > ul > li > a {
+  display: block;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 35px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  color: #000000;
+  font-weight: 500;
+}
+#nav > ul > li > a:before {
+  content: "";
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 9px;
+  margin-top: -5px;
+
+  border-left: 2px solid #000000;
+}
+#nav > ul > li:first-child a:before {
+  display: none;
+}
+#nav > ul > li > div {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  /* left: 50px; */
+  right: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 84px;
+  height: 36.5px;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 2%,
+    rgba(255, 255, 255, 0.858) 25%,
+    rgb(255, 255, 255) 52%,
+    rgba(255, 255, 255, 0.929) 82%,
+    rgba(255, 255, 255, 0) 97%
+  );
+  width: 100%;
+}
+#nav > ul > li > div > ul {
+  opacity: 0;
+  display: inline-block;
+}
+#nav > ul > li > div > ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#nav > ul > li > div > ul > li {
+  float: left;
+  margin: 0 10px;
+}
+
+#nav > ul > li > div > ul > li > a {
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 5px;
+  color: #000000;
+  font-size: 13px;
+}
+
+#nav > ul > li > div > ul > li > a:hover {
+  color: #b20071;
+  font-weight: 700;
+}
+#nav > ul > li > div > ul > li > div {
+  display: none;
+  position: absolute;
+  z-index: 50;
+  left: 0;
+  right: 0;
+  top: 36px;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 4%,
+    rgba(255, 255, 255, 0.834) 28%,
+    rgba(255, 255, 255, 0.895) 52%,
+    rgba(255, 255, 255, 0.76) 81%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+#nav > ul > li > div > ul > li > div > ul {
+  opacity: 0;
+  display: inline-block;
+  width: 980px;
+  margin: 9px 0;
+}
+#nav > ul > li > div > ul > li > div > ul > li {
+  display: inline-block;
+  margin: 0 5px;
+}
+#nav > ul > li > div > ul > li > div > ul > li > a {
+  display: block;
+  opacity: 0.5;
+  height: 11px;
+  line-height: 11px;
+  padding: 0 5px;
+  color: #000000;
+  font-size: 13px;
+}
+
+/* active :depth2 */
+#nav > ul > li.active > a,
+#nav > ul > li.ov > a,
+#nav > ul > li:hover > a {
+  height: 60px;
+  border-bottom: 4px solid #fb66bb;
+}
+#nav > ul > li.active > div,
+#nav > ul > li.ov > div,
+#nav > ul > li:hover > div {
+  display: block;
+}
+#nav > ul > li.active > div > ul,
+#nav > ul > li.ov > div > ul,
+#nav > ul > li:hover > div > ul {
+  opacity: 1;
+}
+#nav > ul > li.active > div > ul > li.active > a,
+#nav > ul > li.ov > div > ul > li.active > a,
+#nav > ul > li.active > div > ul > li > a:hover {
+  color: #000000;
+}
+/* activ :depth3 */
+#nav > ul > li > div > ul > li.active > div,
+#nav > ul > li > div > ul > li.ov > div,
+#nav > ul > li > div > ul > li:hover > div {
+  display: block;
+}
+#nav > ul > li > div > ul > li.active > div > ul,
+#nav > ul > li > div > ul > li.ov > div > ul,
+#nav > ul > li > div > ul > li:hover > div > ul {
+  opacity: 1;
+  color: #fb66bb;
+}
+#nav > ul > li > div > ul > li > div > ul > li.active > a,
+#nav > ul > li > div > ul > li > div > ul > li.ov > a,
+#nav > ul > li > div > ul > li > div > ul > li > a:hover {
+  opacity: 1;
+  font-weight: 700;
+}
+
+.my {
+  font-weight: 800;
+  font-size: 23px;
+  color: #5c1e91;
+  padding: 0px;
+}
+
+.my > a > i {
+  padding: 3px 3px;
+}
+
+.my > a > i.fill {
+}

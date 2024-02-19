@@ -2,8 +2,8 @@
   display: none;
 }
 .middle-inner {
-  /* background-color: #000000 !important; */
-  background-color: transparent !important;
+  background-color: #ffffff !important;
+  /* background-color: transparent !important; */
   position: fixed !important;
   margin: 0 auto;
   left: 0;
@@ -11,37 +11,6 @@
   z-index: 10;
   padding: 0 !important;
   height: 121px !important;
-}
-
-/* 헤더 고정  ==============================*/
-.middle-inner.sticky {
-  position: fixed;
-  height: 8px;
-  background-color: #fff !important;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-}
-
-.header_content.sticky {
-  background-color: #fff;
-  height: 8px;
-}
-
-.logologo.sticky {
-  color: #000000 !important;
-}
-
-.logologo:before.sticky {
-  display: none;
-}
-
-.memberInfo.sticky li > a > i {
-  color: #000000;
-  /* display: none; */
-}
-
-.memberInfo.sticky li > a > span {
-  color: #000000;
-  /* display: none; */
 }
 
 /* ============================================== */
@@ -81,7 +50,7 @@
   height: 60%;
   margin-left: 40px;
   padding-top: 0 !important;
-  color: #fff;
+  color: #6e1d8e;
 }
 
 .hicinema_logo > span {
@@ -93,7 +62,7 @@
 .logologo {
   font-family: Russo One;
   letter-spacing: 2px;
-  color: #ffffff;
+  color: #6e1d8e;
   font-size: 3em;
   /* text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.4); 그림자 효과 */
   position: relative;
@@ -107,11 +76,11 @@
   line-height: 0.83em;
   transform: rotateX(180deg);
   transform-origin: bottom;
-  background: linear-gradient(to top, #ffffff 0%, transparent 70%);
+  background: linear-gradient(to top, #6e1d8e 0%, transparent 70%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 .logologo a {
   padding: 0px !important;
@@ -157,12 +126,12 @@
 }
 .memberInfo > li > a > i {
   font-size: 1.2em;
-  color: #ffffff;
+  color: #000000;
   padding: 3px;
 }
 .memberInfo > li > a > span {
   position: absolute;
-  color: #ffffff;
+  color: #000000;
   line-height: 1.462em;
   white-space: nowrap;
   transform: translate(-50%, 0);
@@ -175,13 +144,13 @@
 .header_line {
   width: 100%;
   height: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   /* background-color: #ffffff; */
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.7) 17%,
-    rgba(255, 255, 255, 0.8) 86%,
+    rgba(95, 9, 119, 0.7) 17%,
+    rgba(130, 74, 186, 0.8) 86%,
     rgba(255, 255, 255, 0) 100%
   );
   animation: gra 4s ease infinite;
@@ -305,27 +274,27 @@
   width: 15%;
   /* margin-bottom: 13px; */
   position: relative;
-  bottom: 2px;
+  bottom: 0px;
 }
 
 .search {
-  border-bottom: solid 1px #ffffffc8;
+  border-bottom: solid 1px #202020b6;
 }
 
 .search > form > input {
   border: none;
-  background-color: #20202000;
+  background-color: #ffffff00;
   margin-right: 6px;
 }
 
 .search > form > input:focus {
   border: none;
-  color: #ffffff;
+  color: #202020b6;
   outline: none;
 }
 
 input::placeholder {
-  color: #ffffff;
+  color: #202020b6;
   font-size: 1em;
   /* font-weight: 100; */
 }
@@ -344,7 +313,7 @@ input:focus::placeholder {
 }
 .search > form > button > i {
   font-size: 1.3em;
-  color: #ffffff;
+  color: #202020b6;
 }
 
 /* nav ================================ */
@@ -371,7 +340,7 @@ input:focus::placeholder {
   font-size: 14px;
   letter-spacing: 0.1em;
   white-space: nowrap;
-  color: #fff;
+  color: #000000;
   font-weight: 500;
 }
 #nav > ul > li > a:before {
@@ -383,7 +352,7 @@ input:focus::placeholder {
   height: 9px;
   margin-top: -5px;
 
-  border-left: 2px solid #ffffff;
+  border-left: 2px solid #000000;
 }
 #nav > ul > li:first-child a:before {
   display: none;
@@ -396,17 +365,17 @@ input:focus::placeholder {
   right: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  top: 144px;
-  height: 38px;
+  top: 138.7px;
+  height: 36.5px;
   text-align: center;
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0) 2%,
-    rgba(0, 0, 0, 0.5251635810574229) 25%,
-    rgba(0, 0, 0, 0.6456117603291316) 52%,
-    rgba(0, 0, 0, 0.45233444940476186) 82%,
-    rgba(0, 0, 0, 0) 97%
+    rgba(255, 255, 255, 0) 2%,
+    rgba(255, 255, 255, 0.858) 25%,
+    rgba(255, 255, 255, 0.895) 52%,
+    rgba(255, 255, 255, 0.855) 82%,
+    rgba(255, 255, 255, 0) 97%
   );
   width: 100%;
 }
@@ -426,16 +395,16 @@ input:focus::placeholder {
 
 #nav > ul > li > div > ul > li > a {
   display: block;
-  height: 38px;
-  line-height: 38px;
+  height: 36px;
+  line-height: 36px;
   padding: 0 5px;
-  color: #ffffff;
+  color: #000000;
   font-size: 13px;
 }
 
 #nav > ul > li > div > ul > li > a:hover {
-  color: #f7b2d4;
-  font-weight: 400;
+  color: #b20071;
+  font-weight: 700;
 }
 #nav > ul > li > div > ul > li > div {
   display: none;
@@ -443,23 +412,23 @@ input:focus::placeholder {
   z-index: 5;
   left: 0;
   right: 0;
-  top: 38px;
+  top: 36px;
   text-align: center;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0) 4%,
-    rgba(0, 0, 0, 0.6736229648109244) 28%,
-    rgba(0, 0, 0, 0.7884689031862745) 52%,
-    rgba(0, 0, 0, 0.5839871104691876) 81%,
-    rgba(0, 0, 0, 0) 100%
+    rgba(255, 255, 255, 0) 4%,
+    rgba(255, 255, 255, 0.834) 28%,
+    rgba(255, 255, 255, 0.895) 52%,
+    rgba(255, 255, 255, 0.76) 81%,
+    rgba(255, 255, 255, 0) 100%
   );
 }
 #nav > ul > li > div > ul > li > div > ul {
   opacity: 0;
   display: inline-block;
   width: 980px;
-  margin: 10px 0;
+  margin: 9px 0;
 }
 #nav > ul > li > div > ul > li > div > ul > li {
   display: inline-block;
@@ -468,10 +437,10 @@ input:focus::placeholder {
 #nav > ul > li > div > ul > li > div > ul > li > a {
   display: block;
   opacity: 0.5;
-  height: 18px;
-  line-height: 18px;
+  height: 11px;
+  line-height: 11px;
   padding: 0 5px;
-  color: #fff;
+  color: #000000;
   font-size: 13px;
 }
 
@@ -479,8 +448,8 @@ input:focus::placeholder {
 #nav > ul > li.active > a,
 #nav > ul > li.ov > a,
 #nav > ul > li:hover > a {
-  height: 38px;
-  border-bottom: 3px solid #fb66bb;
+  height: 40px;
+  border-bottom: 4px solid #fb66bb;
 }
 #nav > ul > li.active > div,
 #nav > ul > li.ov > div,
@@ -513,4 +482,5 @@ input:focus::placeholder {
 #nav > ul > li > div > ul > li > div > ul > li.ov > a,
 #nav > ul > li > div > ul > li > div > ul > li > a:hover {
   opacity: 1;
+  font-weight: 700;
 }
