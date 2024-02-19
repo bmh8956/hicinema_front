@@ -10,6 +10,7 @@
     //Add active class to nav-link based on url dynamically
     //Active class can be hard coded directly in html file also as required
     var current = location.pathname.split("/").slice(-1)[0].replace(/^\/|\/$/g, '');
+    let check = false;
     $('.nav li a', sidebar).each(function() {
       var $this = $(this);
       if (current === "") {
@@ -19,6 +20,7 @@
           if ($(this).parents('.sub-menu').length) {
             $(this).closest('.collapse').addClass('show');
             $(this).addClass('active');
+            check = true;
           }
         }
       } else {
@@ -28,9 +30,23 @@
           if ($(this).parents('.sub-menu').length) {
             $(this).closest('.collapse').addClass('show');
             $(this).addClass('active');
+            check = true;
           }
         }
       }
+
+      //  custom js - bmh ( 언더바(_) 앞이 같으면 리스트 페이지로 연결되었던 sidebar active 오류생기면 주석해주세요)
+      if(check === false) {
+        let rt = $(this).attr('href').substring($(this).attr('href').lastIndexOf("/") + 1);
+        let r = rt.split("_")[0];
+        let cur = current.split("_")[0]
+        if(r === cur) {
+          $(this).closest('.collapse').addClass('show');
+          $(this).addClass('active');
+          check = true;
+        }
+      }
+
     })
 
     //Close other submenu in sidebar on opening any
