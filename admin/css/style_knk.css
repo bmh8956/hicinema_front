@@ -8631,6 +8631,58 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.table thead th {
+  vertical-align: unset !important;
+}
+
+.table-bordered th, .table-bordered td {
+ padding: 10px !important;
+}
+.pagebtn {
+  margin-top: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.page-button {
+  display: inline-block;
+  width: 65px;
+  height: 40px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #d98bff, #9d57ff);
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+.page-button:hover, .page-button-nunber:hover {
+  background: linear-gradient(to right, #e8bbff, #c092ff);
+}
+
+.page-button-nunber {
+  display: inline-block;
+  width: 30px;
+  height: 40px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #d98bff, #9d57ff);
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 1px;
+}
+
+.page-button-nunber:first-child {
+  margin-left: 10px;
+}
+
 .WD-btn {
   float: right;
   margin-bottom: 15px;
