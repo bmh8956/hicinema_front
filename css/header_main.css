@@ -1,5 +1,7 @@
+
 .preloader {
   display: none;
+  /* background-color: #000000 !; */
 }
 #before .middle-inner {
   /* background-color: #000000 !important; */
@@ -13,38 +15,7 @@
   height: 121px !important;
 }
 
-/* 헤더 고정  ==============================*/
-#before .middle-inner.sticky {
-  position: fixed;
-  height: 8px;
-  background-color: #fff !important;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-}
 
-#before .header_content.sticky {
-  background-color: #fff;
-  height: 8px;
-}
-
-#before .logologo.sticky {
-  color: #000000 !important;
-}
-
-#before .logologo:before.sticky {
-  display: none;
-}
-
-#before .memberInfo.sticky li > a > i {
-  color: #000000;
-  /* display: none; */
-}
-
-#before .memberInfo.sticky li > a > span {
-  color: #000000;
-  /* display: none; */
-}
-
-/* ============================================== */
 
 #before .header_content {
   /* border: solid 1px red; */
@@ -75,8 +46,6 @@
 #before .hicinema_logo {
   display: flex;
   align-items: flex-end;
-  /* border: solid 1px salmon; */
-  /* padding: 10px; */
   width: 40%;
   height: 60%;
   margin-left: 40px;
@@ -282,10 +251,7 @@
   ); /* [추가] 하위 메뉴 전체에 배경색 설정 */
   /* transform: translate(-50% ,); */
 }
-.submenu li {
-  /* display: inline-block; */
-  /* position: absolute; */
-}
+
 .topMenuLi:hover .submenu {
   height: 32px;
 }
@@ -396,17 +362,17 @@ input:focus::placeholder {
   right: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  top: 144px;
+  top: 140px;
   height: 38px;
   text-align: center;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0) 2%,
-    rgba(0, 0, 0, 0.5251635810574229) 25%,
-    rgba(0, 0, 0, 0.6456117603291316) 52%,
-    rgba(0, 0, 0, 0.45233444940476186) 82%,
-    rgba(0, 0, 0, 0) 97%
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 10%,
+    rgba(0, 0, 0, 0.6) 55%,
+    rgba(0, 0, 0, 0.6) 90%,
+    rgba(0, 0, 0, 0) 100%
   );
   width: 100%;
 }
@@ -435,7 +401,7 @@ input:focus::placeholder {
 
 #nav > ul > li > div > ul > li > a:hover {
   color: #f7b2d4;
-  font-weight: 400;
+  font-weight: 500;
 }
 #nav > ul > li > div > ul > li > div {
   display: none;
@@ -481,6 +447,7 @@ input:focus::placeholder {
 #nav > ul > li:hover > a {
   height: 38px;
   border-bottom: 3px solid #fb66bb;
+  z-index: 1000;
 }
 #nav > ul > li.active > div,
 #nav > ul > li.ov > div,
