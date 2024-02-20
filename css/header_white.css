@@ -1,7 +1,9 @@
+
 .preloader {
   display: none;
+  /* background-color: #000000 !; */
 }
-.middle-inner {
+#before .middle-inner {
   background-color: #ffffff !important;
   /* background-color: transparent !important; */
   position: fixed !important;
@@ -13,9 +15,9 @@
   height: 121px !important;
 }
 
-/* ============================================== */
 
-.header_content {
+
+#before .header_content {
   /* border: solid 1px red; */
   /* background-image: url(../images/IfOnly_1920774.jpg); */
   width: 100%;
@@ -26,11 +28,11 @@
   align-items: center;
   background-color: transparent;
 }
-.top_navmenu.sticky {
+#before .top_navmenu.sticky {
   display: none;
 }
 
-.top_navmenu {
+#before .top_navmenu {
   /* border: solid 1px blue; */
   width: 98%;
   height: 75px;
@@ -41,11 +43,9 @@
 }
 
 /* logo ======= */
-.hicinema_logo {
+#before .hicinema_logo {
   display: flex;
   align-items: flex-end;
-  /* border: solid 1px salmon; */
-  /* padding: 10px; */
   width: 40%;
   height: 60%;
   margin-left: 40px;
@@ -53,13 +53,13 @@
   color: #6e1d8e;
 }
 
-.hicinema_logo > span {
+#before .hicinema_logo > span {
   font-size: 14px;
   margin-left: 20px;
   margin-bottom: 2px;
   letter-spacing: 2px;
 }
-.logologo {
+#before .logologo {
   font-family: Russo One;
   letter-spacing: 2px;
   color: #6e1d8e;
@@ -68,7 +68,7 @@
   position: relative;
 }
 
-.logologo:before {
+#before .logologo:before {
   content: attr(data-text);
   position: absolute;
   top: 0;
@@ -82,7 +82,7 @@
   color: transparent;
   opacity: 0.5;
 }
-.logologo a {
+#before .logologo a {
   padding: 0px !important;
   /* margin-top: 50px; */
 }
@@ -99,7 +99,7 @@
   width: 50%;
 } */
 
-.bottom_navmenu {
+#before .bottom_navmenu {
   /* border: solid 1px rgb(27, 255, 141); */
   width: 98%;
   height: 75px;
@@ -107,7 +107,7 @@
   justify-content: space-between;
 }
 
-.memberInfo {
+#before .memberInfo {
   display: flex;
   align-items: center;
 }
@@ -118,18 +118,18 @@
   top: 10px;
   left: 430px;
 } */
-.memberInfo > li > a {
+#before .memberInfo > li > a {
   display: block;
   position: relative;
   padding-bottom: 19px;
   margin: 40px 20px 40px 20px;
 }
-.memberInfo > li > a > i {
+#before .memberInfo > li > a > i {
   font-size: 1.2em;
   color: #000000;
   padding: 3px;
 }
-.memberInfo > li > a > span {
+#before .memberInfo > li > a > span {
   position: absolute;
   color: #000000;
   line-height: 1.462em;
@@ -141,10 +141,10 @@
   margin-top: 8px;
 }
 
-.header_line {
+#before .header_line {
   width: 100%;
   height: 1px;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   /* background-color: #ffffff; */
   background: linear-gradient(
     90deg,
@@ -239,22 +239,19 @@
   width: 1110px;
   /* left: 0;      */
   right: 0;
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.3) 12%,
-    rgba(0, 0, 0, 0.5) 28%,
-    rgba(0, 0, 0, 0.5) 65%,
-    rgba(0, 0, 0, 0.3) 86%,
-    rgba(0, 0, 0, 0) 100%
+    rgba(255, 255, 255, 0.3) 12%,
+    rgba(255, 255, 255, 0.5) 28%,
+    rgba(255, 255, 255, 0.5) 65%,
+    rgba(255, 255, 255, 0.3) 86%,
+    rgba(255, 255, 255, 0) 100%
   ); /* [추가] 하위 메뉴 전체에 배경색 설정 */
   /* transform: translate(-50% ,); */
 }
-.submenu li {
-  /* display: inline-block; */
-  /* position: absolute; */
-}
+
 .topMenuLi:hover .submenu {
   height: 32px;
 }
@@ -274,7 +271,7 @@
   width: 15%;
   /* margin-bottom: 13px; */
   position: relative;
-  bottom: 0px;
+  bottom: 2px;
 }
 
 .search {
@@ -283,7 +280,7 @@
 
 .search > form > input {
   border: none;
-  background-color: #ffffff00;
+  background-color:  #ffffff00;
   margin-right: 6px;
 }
 
@@ -340,7 +337,7 @@ input:focus::placeholder {
   font-size: 14px;
   letter-spacing: 0.1em;
   white-space: nowrap;
-  color: #000000;
+  color: #000;
   font-weight: 500;
 }
 #nav > ul > li > a:before {
@@ -352,7 +349,7 @@ input:focus::placeholder {
   height: 9px;
   margin-top: -5px;
 
-  border-left: 2px solid #000000;
+  border-left: 2px solid #000;
 }
 #nav > ul > li:first-child a:before {
   display: none;
@@ -365,17 +362,17 @@ input:focus::placeholder {
   right: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  top: 138.7px;
-  height: 36.5px;
+  top: 140px;
+  height: 38px;
   text-align: center;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0) 2%,
-    rgba(255, 255, 255, 0.858) 25%,
-    rgba(255, 255, 255, 0.895) 52%,
-    rgba(255, 255, 255, 0.855) 82%,
-    rgba(255, 255, 255, 0) 97%
+    rgba(255, 255, 255, 0) 0%,
+    rgb(255, 255, 255) 10%,
+    rgb(255, 255, 255) 55%,
+    rgb(255, 255, 255) 90%,
+    rgba(255, 255, 255, 0) 100%
   );
   width: 100%;
 }
@@ -395,16 +392,16 @@ input:focus::placeholder {
 
 #nav > ul > li > div > ul > li > a {
   display: block;
-  height: 36px;
-  line-height: 36px;
+  height: 38px;
+  line-height: 38px;
   padding: 0 5px;
-  color: #000000;
+  color: #000;
   font-size: 13px;
 }
 
 #nav > ul > li > div > ul > li > a:hover {
   color: #b20071;
-  font-weight: 700;
+  font-weight: 500;
 }
 #nav > ul > li > div > ul > li > div {
   display: none;
@@ -412,15 +409,15 @@ input:focus::placeholder {
   z-index: 5;
   left: 0;
   right: 0;
-  top: 36px;
+  top: 38px;
   text-align: center;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0) 4%,
-    rgba(255, 255, 255, 0.834) 28%,
-    rgba(255, 255, 255, 0.895) 52%,
-    rgba(255, 255, 255, 0.76) 81%,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.834) 10%,
+    rgba(255, 255, 255, 0.895) 55%,
+    rgba(255, 255, 255, 0.76) 90%,
     rgba(255, 255, 255, 0) 100%
   );
 }
@@ -428,7 +425,7 @@ input:focus::placeholder {
   opacity: 0;
   display: inline-block;
   width: 980px;
-  margin: 9px 0;
+  margin: 10px 0;
 }
 #nav > ul > li > div > ul > li > div > ul > li {
   display: inline-block;
@@ -436,11 +433,11 @@ input:focus::placeholder {
 }
 #nav > ul > li > div > ul > li > div > ul > li > a {
   display: block;
-  opacity: 0.5;
-  height: 11px;
-  line-height: 11px;
+  opacity: 0.9;
+  height: 18px;
+  line-height: 18px;
   padding: 0 5px;
-  color: #000000;
+  color: #000;
   font-size: 13px;
 }
 
@@ -448,8 +445,9 @@ input:focus::placeholder {
 #nav > ul > li.active > a,
 #nav > ul > li.ov > a,
 #nav > ul > li:hover > a {
-  height: 40px;
-  border-bottom: 4px solid #fb66bb;
+  height: 38px;
+  border-bottom: 3px solid #fb66bb;
+  z-index: 1000;
 }
 #nav > ul > li.active > div,
 #nav > ul > li.ov > div,
@@ -484,3 +482,4 @@ input:focus::placeholder {
   opacity: 1;
   font-weight: 700;
 }
+

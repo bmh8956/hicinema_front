@@ -16,8 +16,8 @@
           rel="stylesheet">
 
     <!-- StyleSheet -->
-    <link rel="stylesheet" href="css/header_white2.css" />
-    <link rel="stylesheet" href="css/header_sticky2.css" />
+    <link rel="stylesheet" href="css/header_white.css" />
+    <link rel="stylesheet" href="css/header_sticky.css" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Magnific Popup -->
@@ -113,9 +113,8 @@
 </div>
 <!-- /End Color Plate -->
 
-<!-- Header -->
-<!-- Header ======================================================================================================= -->
-<header class="header shop v3" id="before">
+<!--	 Header =======================================================================================================-->
+<header  class="header shop v3" id="before">
     <div class="middle-inner">
         <div class="container">
             <div class="header_content">
@@ -168,6 +167,7 @@
                                     </ul>
                                 </div>
                             </li>
+
                             <li>
                                 <a href="">영화</a>
                                 <div>
@@ -177,6 +177,7 @@
                                     </ul>
                                 </div>
                             </li>
+
                             <li>
                                 <a href="">영화관</a>
                                 <div>
@@ -312,6 +313,7 @@
                                     </ul>
                                 </div>
                             </li>
+
                             <li>
                                 <a href="">이벤트</a>
                                 <div>
@@ -322,6 +324,7 @@
                                     </ul>
                                 </div>
                             </li>
+
                             <li>
                                 <a href="">스토어</a>
                                 <div>
@@ -348,7 +351,7 @@
             </div>
         </div>
     </div>
-</header>
+</header >
 <header class="header shop v3" id="after">
     <!-- 고정 헤더 디자인 ============================ -->
 
@@ -540,15 +543,14 @@
                     </nav>
 
                     <div class="my">
-                        <a href="마이영화관"><i class="fa-regular fa-star"></i></a>
-                        <a href="마이페이지"><i class="fa-regular fa-user"></i></a>
+                        <a href="마이영화관"><i class="fa-solid fa-star"></i></a>
+                        <a href="마이페이지"><i class="fa-solid fa-user"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </header>
-<!--/ End Header -->
 <!--/ End Header -->
 
 <!-- Product Style -->
@@ -2722,21 +2724,10 @@
 <script src="js/easing.js"></script>
 <!-- Active JS -->
 <script src="js/active.js"></script>
+<script src="js/header.js"></script>
 
 <script>
 
-    let before = document.getElementById("before");
-    let after = document.getElementById("after");
-
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 50) {
-            after.style.display = "block"
-            before.style.display = 'none'
-        } else {
-            after.style.display = "none"
-            before.style.display = 'block'
-        }
-    });
 
     window.onload = () => {
         // 모바일의 경우
