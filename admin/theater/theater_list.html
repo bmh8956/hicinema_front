@@ -292,7 +292,24 @@
                         <ul class="nav flex-column sub-menu">
                             <li class="nav-item"><a class="nav-link" href="../theater/loc_list.html">지역</a></li>
                             <li class="nav-item"><a class="nav-link" href="../theater/theater_list.html">영화관</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../movie/movie_list.html">영화</a></li>
+                            <!--                <li class="nav-item"> <a class="nav-link" href="../pages/samples/register.html"> Register </a></li>-->
+                            <!--                <li class="nav-item"> <a class="nav-link" href="../pages/samples/error-404.html"> 404 </a></li>-->
+                            <!--                <li class="nav-item"> <a class="nav-link" href="../pages/samples/error-500.html"> 500 </a></li>-->
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#movie" aria-expanded="false"
+                       aria-controls="general-pages">
+                        <span class="menu-title">영화</span>
+                        <i class="menu-arrow"></i>
+                        <i class="mdi mdi-medical-bag menu-icon"></i>
+                    </a>
+                    <div class="collapse" id="movie">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"><a class="nav-link" href="../movie/movie_list.html">현재상영작</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../movie/movie2_list.html">상영예정작</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../movie/movie3_list.html">상영종료</a></li>
                             <!--                <li class="nav-item"> <a class="nav-link" href="../pages/samples/register.html"> Register </a></li>-->
                             <!--                <li class="nav-item"> <a class="nav-link" href="../pages/samples/error-404.html"> 404 </a></li>-->
                             <!--                <li class="nav-item"> <a class="nav-link" href="../pages/samples/error-500.html"> 500 </a></li>-->
@@ -340,7 +357,7 @@
                                     <div class="col-lg-6">
                                         <h4 class="card-title">영화관 목록</h4>
                                         <p class="card-description">
-                                            Add class <code>.table-hover</code>
+                                            <code>전체</code>
                                         </p>
                                     </div>
                                     <div class="col-lg-6">
@@ -350,11 +367,12 @@
                                 </div>
                                 <form>
                                     <div class="row">
-                                        <div class="col-lg-5">
+                                        <div class="col-lg-4">
                                             <div class="form-group">
                                                 <label for="exampleFormControlSelect3">지역</label>
                                                 <select class="form-control form-control-sm"
                                                         id="exampleFormControlSelect3">
+                                                    <option>전체</option>
                                                     <option>서울</option>
                                                     <option>인천/경기</option>
                                                     <option>충천/대전</option>
@@ -363,7 +381,7 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-lg-5">
+                                        <div class="col-lg-4">
                                             <div class="form-group">
                                                 <label for="exampleInputUsername1">영화관 명</label>
                                                 <input type="text" class="form-control" id="exampleInputUsername1"
@@ -372,6 +390,9 @@
                                         </div>
                                         <div class="col-lg-2" style="align-self: center;">
                                             <button type="submit" class="btn btn-gradient-primary mb-2">검색</button>
+                                        </div>
+                                        <div class="col-lg-2" style="align-self: center;text-align: right">
+                                            <button type="submit" class="btn btn-gradient-danger mb-2">삭제</button>
                                         </div>
                                     </div>
                                 </form>
