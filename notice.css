@@ -1,0 +1,382 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .top-section {
+    background-color: #f0f0f0;
+    padding: 20px; /* 조절된 간격 */
+    text-align: center;
+    
+  }
+  
+  .customer-service {
+    font-size: 24px;
+    text-align: left;
+    
+  }
+  
+  .line {
+    border: 1px solid #ccc;
+    margin-top: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px; /* 조절된 간격 */
+  }
+  
+  button span {
+    font-size: 17px;
+  }
+  
+  button .notice-buttons {
+    display: flex;
+  }
+    
+  button .notice-buttons {
+    display: flex;
+  }
+  
+  button .notice-buttons span {
+    padding: 5px 10px; /* 조절된 간격 */
+    display: none; /* 초기에는 숨겨둠 */
+  }
+
+  button:hover .notice-buttons span {
+    display: block; /* 마우스를 올릴 때 나타나게 함 */
+  }
+
+  .buttons button span:hover {
+    text-decoration: underline;
+  }
+
+  /* 표CSS */
+  
+  #board-search .search-window {
+    padding: 15px 0;
+    background-color: #ffffff;
+  }
+  #board-search .search-window .search-wrap {
+    position: relative;
+  /*   padding-right: 124px; */
+    margin: 0 auto;
+    width: 80%;
+    max-width: 564px;
+    float:left;
+  }
+  #board-search .search-window .search-wrap input {
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+    padding: 7px 14px;
+    border: 1px solid #ccc;
+  }
+  #board-search .search-window .search-wrap input:focus {
+    border-color: #333;
+    outline: 0;
+    border-width: 1px;
+  }
+  #board-search .search-window .search-wrap .btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 108px;
+    padding: 0;
+    font-size: 16px;
+  }
+
+  .board-table {
+    font-size: 13px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .board-table a {
+    color: #333;
+    display: inline-block;
+    line-height: 1.4;
+    word-break: break-all;
+    vertical-align: middle;
+  }
+  .board-table a:hover {
+    text-decoration: underline;
+  }
+  .board-table th {
+    text-align: center;
+  }
+  
+  .board-table .th-num {
+    width: 100px;
+    text-align: center;
+  }
+  
+  .board-table .th-date {
+    width: 200px;
+  }
+  
+  .board-table th, .board-table td {
+    padding: 14px 0;
+  }
+  
+  .board-table tbody td {
+    border-top: 1px solid #e7e7e7;
+    text-align: center;
+  }
+  
+  .board-table tbody th {
+    padding-left: 28px;
+    padding-right: 14px;
+    border-top: 1px solid #e7e7e7;
+    text-align: left;
+  }
+  
+  .board-table tbody th p{
+    display: none;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 15px;
+    font-weight: 400;
+    background: transparent;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .btn-dark {
+    background: #555;
+    color: #fff;
+  }
+  
+  .btn-dark:hover, .btn-dark:focus {
+    background: #373737;
+    border-color: #373737;
+    color: #fff;
+  }
+  
+  .btn-dark {
+    background: #ff78c5b7;
+    color: #fff;
+  }
+  
+  .btn-dark:hover, .btn-dark:focus {
+    background: #ff78c5b7;
+    border-color: #373737;
+    color: #fff;
+  }
+  
+  /* reset */
+  
+  * {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .container {
+    width: 1100px;
+    margin: 0 auto;
+  }
+  .blind {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+  }
+  
+  .ty3{list-style: none;
+    font-family: "Noto Sans KR", "Roboto", "dotum", "sans-serif";
+    color: #000;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -webkit-border-radius: 4px;
+    border: 1px solid #ddd;
+    background: #fff url("../images/icon/arr_dw_13.png");
+    background-repeat: no-repeat;
+    background-position: right 6px top 50%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 35px 0 18px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-image: url("../images/icon/arr_dw_9.png");
+    margin-right: 8px; }
+
+    /* 공지사항 예시 Css */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+     
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      border: 1px solid rgb(255, 251, 251); /* 표시선 스타일 추가 */
+    }
+
+    table, th, td {
+      border: 1px solid rgb(255, 255, 255); /* 표시선 스타일 추가 */
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #fff9f9;
+    }
+
+    .pagination {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      justify-content: center;
+    }
+
+    .page-item {
+      margin: 0 5px;
+    }
+
+    .page-link {
+      display: block;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      background-color: #ff78c5b7;
+      color: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .page-link:hover {
+      background-color: #ff78c5b7;
+    }
+
+    /* 1대1 문의 */
+    .txt_help_wrap{line-height: 1.1;
+    letter-spacing: -0.03em;
+    font-family: "Noto Sans KR", "Roboto", "dotum", "sans-serif";
+    color: #000;
+    list-style: none;
+    float: right;
+    border-left: 1px solid rgba(0, 0, 0, .27);
+    padding: 0 25px;
+    margin-left: 20px;
+    font-size: 12px;
+    }
+
+    .search_wrap ty2{line-height: 1.1;
+    letter-spacing: -0.03em;
+    font-family: "Noto Sans KR", "Roboto", "dotum", "sans-serif";
+    color: #000;
+    list-style: none;
+    font-size: 0;
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    }
+
+    .btn_col2{
+    list-style: none;
+    font-family: "Noto Sans KR", "Roboto", "dotum", "sans-serif";
+    -webkit-appearance: none;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #414141;
+    font-size: 14px;
+    color: #ffffff !important;
+    text-align: center;
+    background-color: #414141;
+    width: 86px;
+    height: 38px;
+    line-height: 34px;
+    vertical-align: middle;
+    }
+
+    .text{
+      list-style: none;
+      font-family: "Noto Sans KR", "Roboto", "dotum", "sans-serif";
+      color: #000;
+      vertical-align: middle;
+      -webkit-appearance: none;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 18px;
+      -webkit-border-radius: 4px;
+      background-color: #fff;
+      font-size: 14px;
+      box-sizing: border-box;
+      border: 1px solid #DDD;
+      width: 300px;
+      margin-right: 8px;
+    }
+
+    .help-link{
+      float: right ;
+      
+    }
+
+    /* FAQ게시판 */
+    .board {
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      font-family: "Noto Sans KR", "Roboto", "dotum", "sans-serif";
+      font-size: 15px;
+      color: #000;
+      list-style: none;
+      border-collapse: collapse;
+      border-spacing: 0;
+      
+  }
+
+  .board th, .board td {
+      padding: 10px; /* Add padding as needed */
+      border: 1px solid #ffffff; /* Add border styling as needed */
+     
+  }
