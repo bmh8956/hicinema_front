@@ -1,6 +1,6 @@
 body {
-    background-color: #222 !important; /* 배경색 - 어두운 색상 */
-    color: #FFFFFF; /* 텍스트 색상 - 연한 회색 */
+    background-color: #222; /* 배경색 - 어두운 색상 */
+    color: #0b0b0b !important; /* 텍스트 색상 - 연한 회색 */
     font-family: Arial, sans-serif; /* 글꼴 설정 */
 }
 
@@ -12,15 +12,15 @@ body {
     border: #ccc 1px solid;
     border-radius: 10px;
     padding: 20px;
-    color: #FFFFFF;
+    color: #0b0b0b;
 }
 .myPage{
     position: relative;
-    color: #FFFFFF;
+    color: #0b0b0b;
     top: 150px;
 }
 .myPage > h1{
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     margin-left: 30px;
     margin-bottom: 15px;
 }
@@ -28,13 +28,13 @@ body {
 .afterPay,.bookingInfo{
     max-width: 800px;
     margin: 5% auto;
-    color: #FFFFFF;
+    color: #0b0b0b;
 }
 p{
-    color: #FFFFFF !important;
+    color: #0b0b0b !important;
 }
 hr{
-    color: #FFFFFF;
+    color: #0b0b0b;
     max-width: 800px;
     width: 800px;
 }
@@ -53,7 +53,7 @@ hr{
 }
 
 h1, h2 {
-    color: #fff; /* 제목 색상 - 흰색 */
+    color: #0b0b0b; /* 제목 색상 - 흰색 */
 }
 
 .greeting {
@@ -71,10 +71,10 @@ h1, h2 {
 }
 .profilesEdit a{
     text-decoration : none;
-    color: #fff;
+    color: #0b0b0b;
 }
 .profilesEdit a:visited{
-    color: #fff;
+    color: #0b0b0b;
 }
 .profilesEdit a:hover{
     color: #8b8b8b;

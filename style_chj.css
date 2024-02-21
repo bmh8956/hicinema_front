@@ -2,6 +2,10 @@
 /*========================================*!*/
 
 .shop.login.register {
+
+	width: 100%;
+	right: 0;
+	left: 0;
 	padding: 153px 0;
 	background: linear-gradient(45deg , #ffffff, #000000);
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -15,9 +19,12 @@
 
 }
 .container{
-	max-height: 436px;
-	overflow: auto;
+	margin: 0 145.5px;
 }
+/*#reContainer{*/
+/*	position: relative;*/
+/*	left: 10%;*/
+/*}*/
 lContainer{
 	width: 100%;
 	overflow-x: hidden
@@ -104,6 +111,17 @@ lContainer{
 .shop.login .form .btn:hover{
 	background:#eaeaea !important;
 	color:#000000;
+}
+#reIdBtn,#reLogin{
+	padding: 0 15px;
+}
+#reLogin{
+	display: inline-block;
+	text-align: center;
+	line-height: 46px;
+	background: #dcdcdc;
+	border-radius: 3px;
+
 }
 #kakaoLogin:hover{
 	background:#fff700 !important;
