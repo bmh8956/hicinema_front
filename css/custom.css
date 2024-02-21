@@ -14,3 +14,7 @@
 .section {
     padding-top: 10%;
 }
+
+#after {
+    display: none;
+}

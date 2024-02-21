@@ -292,7 +292,25 @@
                         <ul class="nav flex-column sub-menu">
                             <li class="nav-item"><a class="nav-link" href="../theater/loc_list.html">지역</a></li>
                             <li class="nav-item"><a class="nav-link" href="../theater/theater_list.html">영화관</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../movie/movie_list.html">영화</a></li>
+<!--                            <li class="nav-item"><a class="nav-link" href="../movie/movie_list.html">영화</a></li>-->
+                            <!--                <li class="nav-item"> <a class="nav-link" href="../pages/samples/register.html"> Register </a></li>-->
+                            <!--                <li class="nav-item"> <a class="nav-link" href="../pages/samples/error-404.html"> 404 </a></li>-->
+                            <!--                <li class="nav-item"> <a class="nav-link" href="../pages/samples/error-500.html"> 500 </a></li>-->
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#movie" aria-expanded="false"
+                       aria-controls="general-pages">
+                        <span class="menu-title">영화</span>
+                        <i class="menu-arrow"></i>
+                        <i class="mdi mdi-medical-bag menu-icon"></i>
+                    </a>
+                    <div class="collapse" id="movie">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"><a class="nav-link" href="movie_list.html">현재상영작</a></li>
+                            <li class="nav-item"><a class="nav-link" href="movie2_list.html">상영예정작</a></li>
+                            <li class="nav-item"><a class="nav-link" href="movie3_list.html">상영종료</a></li>
                             <!--                <li class="nav-item"> <a class="nav-link" href="../pages/samples/register.html"> Register </a></li>-->
                             <!--                <li class="nav-item"> <a class="nav-link" href="../pages/samples/error-404.html"> 404 </a></li>-->
                             <!--                <li class="nav-item"> <a class="nav-link" href="../pages/samples/error-500.html"> 500 </a></li>-->
@@ -300,21 +318,21 @@
                     </div>
                 </li>
                 <li class="nav-item sidebar-actions">
-            <span class="nav-link">
-              <div class="border-bottom">
-                <h6 class="font-weight-normal mb-3">Projects</h6>                
-              </div>
-              <button class="btn btn-block btn-lg btn-gradient-primary mt-4">+ Add a project</button>
-              <div class="mt-4">
-                <div class="border-bottom">
-                  <p class="text-secondary">Categories</p>                  
-                </div>
-                <ul class="gradient-bullet-list mt-4">
-                  <li>Free</li>
-                  <li>Pro</li>
-                </ul>
-              </div>
-            </span>
+                    <span class="nav-link">
+                      <div class="border-bottom">
+                        <h6 class="font-weight-normal mb-3">Projects</h6>
+                      </div>
+                      <button class="btn btn-block btn-lg btn-gradient-primary mt-4">+ Add a project</button>
+                      <div class="mt-4">
+                        <div class="border-bottom">
+                          <p class="text-secondary">Categories</p>
+                        </div>
+                        <ul class="gradient-bullet-list mt-4">
+                          <li>Free</li>
+                          <li>Pro</li>
+                        </ul>
+                      </div>
+                    </span>
                 </li>
             </ul>
         </nav>
@@ -323,7 +341,7 @@
             <div class="content-wrapper">
                 <div class="page-header">
                     <h3 class="page-title">
-                        영화관
+                        영화
                     </h3>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
@@ -338,34 +356,37 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <h4 class="card-title">영화관 목록</h4>
+                                        <h4 class="card-title">영화 리스트</h4>
                                         <p class="card-description">
-                                            Add class <code>.table-hover</code>
+                                            <code>상영종료</code>
                                         </p>
                                     </div>
                                     <div class="col-lg-6">
-                                        <a href="theater_form.html" class="btn btn-gradient-primary mr-2"
-                                           style="float: right">영화관 추가</a>
+                                        <a href="../theater/theater_form.html" class="btn btn-gradient-info mr-2"
+                                           style="float: right">영화 업데이트</a>
+                                        <a href="movie_form.html" class="btn btn-gradient-primary mr-2"
+                                           style="float: right">영화 추가</a>
                                     </div>
                                 </div>
                                 <form>
                                     <div class="row">
                                         <div class="col-lg-5">
                                             <div class="form-group">
-                                                <label for="exampleFormControlSelect3">지역</label>
+                                                <label for="exampleFormControlSelect3">장르</label>
                                                 <select class="form-control form-control-sm"
                                                         id="exampleFormControlSelect3">
-                                                    <option>서울</option>
-                                                    <option>인천/경기</option>
-                                                    <option>충천/대전</option>
-                                                    <option>강원</option>
-                                                    <option>제주</option>
+                                                    <option>전체</option>
+                                                    <option>액션</option>
+                                                    <option>판타지</option>
+                                                    <option>드라마</option>
+                                                    <option>스릴러</option>
+                                                    <option>공포</option>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="col-lg-5">
                                             <div class="form-group">
-                                                <label for="exampleInputUsername1">영화관 명</label>
+                                                <label for="exampleInputUsername1">영화 제목</label>
                                                 <input type="text" class="form-control" id="exampleInputUsername1"
                                                        placeholder="Username">
                                             </div>
@@ -381,12 +402,12 @@
                                         <th width="5%">
                                             <input type="checkbox" class="all_check">
                                         </th>
-                                        <th width="10%">No</th>
-                                        <th width="10%">지역</th>
-                                        <th width="25%">영화관</th>
-                                        <th width="30%">주소</th>
-                                        <th width="10%">총 상영관수</th>
-                                        <th width="10%">총 좌석수</th>
+                                        <th width="5%">No</th>
+                                        <th width="25%">장르</th>
+                                        <th width="30%">영화 제목</th>
+                                        <th width="10%">상영등급</th>
+                                        <th width="10%">러닝타임</th>
+                                        <th width="10%">개봉일</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -395,45 +416,11 @@
                                             <input type="checkbox">
                                         </td>
                                         <td>1</td>
-                                        <td class="text-primary">서울</td>
-                                        <td>수유</td>
-                                        <td>서울 강북구 도봉로 308 (번동)</td>
-                                        <td>6개관</td>
-                                        <td>852석</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox">
-                                        </td>
-                                        <td>1</td>
-                                        <td class="text-primary">서울</td>
-                                        <td>수유</td>
-                                        <td>서울 강북구 도봉로 308 (번동)</td>
-                                        <td>6개관</td>
-                                        <td>852석</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox">
-                                        </td>
-                                        <td>1</td>
-                                        <td class="text-primary">서울</td>
-                                        <td>수유</td>
-                                        <td>서울 강북구 도봉로 308 (번동)</td>
-                                        <td>6개관</td>
-                                        <td>852석</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox">
-                                        </td>
-                                        <td>1</td>
-                                        <td class="text-primary">서울</td>
-                                        <td>수유</td>
-                                        <td>서울 강북구 도봉로 308 (번동)</td>
-                                        <td>6개관</td>
-                                        <td>852석</td>
-                                    </tr>
+                                        <td>판타지, 드라마 / 미국</td>
+                                        <td class="text-primary"><a href="movie_detail.html">웡카</a></td>
+                                        <td>전체관람가</td>
+                                        <td>116</td>
+                                        <td>2024.01.31</td>
                                     </tbody>
                                 </table>
                                 <div class="pagination-area" style="text-align: center">
