@@ -137,7 +137,7 @@
       }
     } else {
       for (let b of bro) {
-        b.checked = false
+        b.checked = false;
       }
     }
   }
