@@ -100,3 +100,45 @@
     })
   });
 })(jQuery);
+
+// custom js - bmh (체크박스 - table 형식의 리스트)
+(function () {
+  let all = document.getElementsByClassName('all_check');
+
+  for (let a of all) {
+    a.addEventListener('change', function () {
+      let parent = a.parentNode;
+      let bro;
+      let table;
+      while (parent) {
+        if (parent.tagName === 'TABLE') {
+          table = parent;
+          break;
+        }
+        parent = parent.parentNode
+      }
+      bro = parent.querySelectorAll('td input[type="checkbox"]');
+      checkbox_control(a, bro);
+      for (let b of bro) {
+        b.addEventListener('change', function () {
+          let bro_cnt = parent.querySelectorAll('td input[type="checkbox"]:checked').length
+          a.checked = (bro_cnt === bro.length);
+        })
+      }
+    })
+  }
+
+  function checkbox_control(all, bro) {
+    console.log(all)
+    console.log(bro)
+    if (all.checked) {
+      for (let b of bro) {
+        b.checked = true
+      }
+    } else {
+      for (let b of bro) {
+        b.checked = false
+      }
+    }
+  }
+})();
