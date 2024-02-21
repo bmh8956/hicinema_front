@@ -17,7 +17,7 @@
 			rel="stylesheet">
 
 	<!-- StyleSheet -->
-	<link rel="stylesheet" href="css/header_nsy2.css" />
+	<link rel="stylesheet" href="css/header_white2.css" />
 	<link rel="stylesheet" href="css/header_sticky2.css" />
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="../Template%20Main/css/bootstrap.css">
@@ -42,7 +42,7 @@
 
 	<!-- Eshop StyleSheet -->
 	<link rel="stylesheet" href="css/reset_knk.css">
-	<link rel="stylesheet" href="style_knk.css">
+<!--	<link rel="stylesheet" href="style_knk.css">-->
 	<link rel="stylesheet" href="../Template%20Main/css/responsive.css">
 	<link rel="stylesheet" href="style_chj.css">
 
@@ -99,18 +99,18 @@
 					<div class="member_menu">
 						<ul class="memberInfo">
 							<li>
-								<a href=""
+								<a href="login_chj.html"
 								><i class="fa-solid fa-lock"></i><span>로그인</span></a
 								>
 							</li>
 							<li>
-								<a href=""
+								<a href="#"
 								><i class="fa-solid fa-user-plus"></i
 								><span>회원가입</span></a
 								>
 							</li>
 							<li>
-								<a href=""
+								<a href="myPage_chj.html"
 								><i class="fa-solid fa-user-large"></i
 								><span>마이페이지</span></a
 								>
@@ -326,12 +326,12 @@
 		<!-- 회원가입 폼  -->
 		<!-- 변경부분  -->
 		<section class="shop login register section">
-			<div class="container">
+			<div class="container" id="reContainer">
 				<div class="row"> 
 					<div class="col-lg-6 offset-lg-3 col-12">
 						<div class="login-form">
 							<h2>회원가입</h2>
-							<p>HICINEMA 에 오신걸 환경합니다!</p>
+							<p>HICINEMA 에 오신걸 환영합니다!</p>
 							<!-- Form -->
 							<form class="form" method="post" action="#">
 								<div class="row">
@@ -373,8 +373,8 @@
 									</div>
 									<div class="col-12">
 										<div class="form-group login-btn">
-											<button class="btn" type="submit">가입하기</button>
-											<a href="login_chj.html" class="btn">로그인</a>
+											<button class="btn" id="reIdBtn" type="submit">가입하기</button>
+											<a href="login_chj.html" class="btn" id="reLogin">로그인</a>
 										</div>
 										<div class="checkbox">
 											<label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox">마케팅 정보수집 동의</label>
