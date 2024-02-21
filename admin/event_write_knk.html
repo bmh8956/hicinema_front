@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>이벤트 목록</title>
+  <title>이벤트 등록</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="vendors/iconfonts/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
@@ -14,6 +14,12 @@
   <link rel="stylesheet" href="css/style_knk.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="images/favicon.png" />
+  <!-- 위지윅 에디터 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <!-- 위지윅 에디터 추가 -->
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+  <!-- Editor's Style -->
+  <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
 </head>
 
 <body>
@@ -23,8 +29,7 @@
     <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
         <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo.svg" alt="logo" /></a>
-        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg"
-            alt="logo" /></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo" /></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-stretch">
         <div class="search-field d-none d-md-block">
@@ -292,7 +297,7 @@
         <div class="content-wrapper">
           <div class="page-header">
             <h3 class="page-title">
-              이벤트 목록
+              이벤트 등록
             </h3>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
@@ -303,345 +308,43 @@
           </div>
           <div class="row">
             <div class="col-md-6 grid-margin stretch-card">
-              <div class="card">
-              </div>
             </div>
             <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <p class="card-description1">
-                    글 목록 <code>10</code>
-                  </p>
-                  <div class="WD-btn">
+                  <form class="forms-sample">
                     <div class="form-group">
-                      <div class="input-group">
-                        <input type="text" class="form-control" placeholder="
-                        " aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                          <button class="btn btn-sm btn-gradient-primary" type="button">검색</button>
-                        </div>
-                      </div>
+                      <label for="exampleInputName1">제목</label>
+                      <input type="text" class="form-control" id="exampleInputName1" placeholder="제목">
                     </div>
-                    <button type="submit" class="btn btn-gradient-primary mr-2">
-                      <i class="mdi mdi-border-color"></i>
-                      글 쓰기</button>
-                    <button class="btn btn-light">
-                      <i class="mdi mdi-delete"></i>
-                      선택 삭제</button>
-                  </div>
-                  <table class="table table-bordered">
-                    <thead>
-                      <tr>
-                        <th>
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input">
-                              <i class="input-helper"></i></label>
-                          </div>
-                        </th>
-                        <th>
-                          번호
-                        </th>
-                        <th>
-                          이벤트명
-                        </th>
-                        <th>
-                          상태
-                        </th>
-                        <th>
-                          시작일
-                        </th>
-                        <th>
-                          종료일
-                        </th>
-                        <th>
-                          관리
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input">
-                              <i class="input-helper"></i></label>
-                          </div>
-                        </td>
-                        <td>
-                          1
-                        </td>
-                        <td>
-                          [아기상어] 단체관람 이벤트
-                        </td>
-                        <td>
-                          게시 중
-                        </td>
-                        <td>
-                          2024.02.19
-                        </td>
-                        <td>
-                          2024.02.29
-                        </td>
-                        <td>
-                          <button class="btn btn-light">수정</button>
-                          <button type="submit" class="btn btn-gradient-primary mr-2">삭제</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input">
-                              <i class="input-helper"></i></label>
-                          </div>
-                        </td>
-                        <td>
-                          2
-                        </td>
-                        <td>
-                          [아기상어] 단체관람 이벤트
-                        </td>
-                        <td>
-                          게시 중
-                        </td>
-                        <td>
-                          2024.02.19
-                        </td>
-                        <td>
-                          2024.02.29
-                        </td>
-                        <td>
-                          <button class="btn btn-light">수정</button>
-                          <button type="submit" class="btn btn-gradient-primary mr-2">삭제</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input">
-                              <i class="input-helper"></i></label>
-                          </div>
-                        </td>
-                        <td>
-                          3
-                        </td>
-                        <td>
-                          [아기상어] 단체관람 이벤트
-                        </td>
-                        <td>
-                          게시 중
-                        </td>
-                        <td>
-                          2024.02.19
-                        </td>
-                        <td>
-                          2024.02.29
-                        </td>
-                        <td>
-                          <button class="btn btn-light">수정</button>
-                          <button type="submit" class="btn btn-gradient-primary mr-2">삭제</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input">
-                              <i class="input-helper"></i></label>
-                          </div>
-                        </td>
-                        <td>
-                          4
-                        </td>
-                        <td>
-                          [아기상어] 단체관람 이벤트
-                        </td>
-                        <td>
-                          게시 중
-                        </td>
-                        <td>
-                          2024.02.19
-                        </td>
-                        <td>
-                          2024.02.29
-                        </td>
-                        <td>
-                          <button class="btn btn-light">수정</button>
-                          <button type="submit" class="btn btn-gradient-primary mr-2">삭제</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input">
-                              <i class="input-helper"></i></label>
-                          </div>
-                        </td>
-                        <td>
-                          5
-                        </td>
-                        <td>
-                          [아기상어] 단체관람 이벤트
-                        </td>
-                        <td>
-                          게시 중
-                        </td>
-                        <td>
-                          2024.02.19
-                        </td>
-                        <td>
-                          2024.02.29
-                        </td>
-                        <td>
-                          <button class="btn btn-light">수정</button>
-                          <button type="submit" class="btn btn-gradient-primary mr-2">삭제</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input">
-                              <i class="input-helper"></i></label>
-                          </div>
-                        </td>
-                        <td>
-                          6
-                        </td>
-                        <td>
-                          [아기상어] 단체관람 이벤트
-                        </td>
-                        <td>
-                          게시 중지
-                        </td>
-                        <td>
-                          2024.02.19
-                        </td>
-                        <td>
-                          2024.02.29
-                        </td>
-                        <td>
-                          <button class="btn btn-light">수정</button>
-                          <button type="submit" class="btn btn-gradient-primary mr-2">삭제</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input">
-                              <i class="input-helper"></i></label>
-                          </div>
-                        </td>
-                        <td>
-                          7
-                        </td>
-                        <td>
-                          [아기상어] 단체관람 이벤트
-                        </td>
-                        <td>
-                          게시 중지
-                        </td>
-                        <td>
-                          2024.02.19
-                        </td>
-                        <td>
-                          2024.02.29
-                        </td>
-                        <td>
-                          <button class="btn btn-light">수정</button>
-                          <button type="submit" class="btn btn-gradient-primary mr-2">삭제</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input">
-                              <i class="input-helper"></i></label>
-                          </div>
-                        </td>
-                        <td>
-                          8
-                        </td>
-                        <td>
-                          [아기상어] 단체관람 이벤트
-                        </td>
-                        <td>
-                          게시 중지
-                        </td>
-                        <td>
-                          2024.02.19
-                        </td>
-                        <td>
-                          2024.02.29
-                        </td>
-                        <td>
-                          <button class="btn btn-light">수정</button>
-                          <button type="submit" class="btn btn-gradient-primary mr-2">삭제</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input">
-                              <i class="input-helper"></i></label>
-                          </div>
-                        </td>
-                        <td>
-                          9
-                        </td>
-                        <td>
-                          [아기상어] 단체관람 이벤트
-                        </td>
-                        <td>
-                          게시 중지
-                        </td>
-                        <td>
-                          2024.02.19
-                        </td>
-                        <td>
-                          2024.02.29
-                        </td>
-                        <td>
-                          <button class="btn btn-light">수정</button>
-                          <button type="submit" class="btn btn-gradient-primary mr-2">삭제</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input">
-                              <i class="input-helper"></i></label>
-                          </div>
-                        </td>
-                        <td>
-                          10
-                        </td>
-                        <td>
-                          [아기상어] 단체관람 이벤트
-                        </td>
-                        <td>
-                          게시 중지
-                        </td>
-                        <td>
-                          2024.02.19
-                        </td>
-                        <td>
-                          2024.02.29
-                        </td>
-                        <td>
-                          <button class="btn btn-light">수정</button>
-                          <button type="submit" class="btn btn-gradient-primary mr-2">삭제</button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                    <!-- 내용 에디터 -->
+                    <div class="form-group">
+                      <!-- <label for="exampleInputName1">내용</label> -->
+                      <div id="content"></div>
+                    </div>
+                    <!-- <label for="exampleTextarea1">내용</label>
+                      <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>-->
+                    <div class="form-group">
+                      <label for="state">상태</label>
+                      <select class="form-control" id="state">
+                        <option>게시 중</option>
+                        <option>게시 중지</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="eventstart">시작일</label><p>
+                      <input type="datetime-local" id="eventstart" max="2040-12-31T23:59" min="2024-02-20T12:30"
+                        value="2024-02-20T12:30"></p>
+                    </div>
+                    <div class="form-group">
+                      <label for="eventend">종료일</label><p>
+                      <input type="datetime-local" id="eventend" max="2040-12-31T23:59" min="2024-02-20T12:30"
+                        value="2024-02-20T12:30"></p>
+                    </div>
+
+                    <button type="button" class="btn btn-gradient-primary mr-2" onclick="location.href='http://192.168.0.68:5500/admin/event_list_knk.html';">등록</button>
+                    <button type="button" class="btn btn-light" onclick="location.href='http://192.168.0.68:5500/admin/event_list_knk.html';">취소</button>
+                  </form>
                 </div>
               </div>
             </div>
@@ -679,6 +382,30 @@
   <!-- Custom js for this page-->
   <script src="js/file-upload.js"></script>
   <!-- End custom js for this page-->
+
+  <!-- 페이지 버튼 -->
+  <script>
+    function previousPage() {
+      // 여기에 이전 페이지로 이동하는 코드를 추가하세요
+      // 예: window.location.href = "이전 페이지 URL";
+    }
+
+    function nextPage() {
+      // 여기에 다음 페이지로 이동하는 코드를 추가하세요
+      // 예: window.location.href = "다음 페이지 URL";
+    }
+  </script>
+
+  <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+  <script>
+    const editor = new toastui.Editor({
+      el: document.querySelector('#content'), // 에디터를 적용할 요소 (컨테이너)
+      height: '500px',                        // 에디터 영역의 높이 값 (OOOpx || auto)
+      initialEditType: 'wysiwyg',            // 최초로 보여줄 에디터 타입 (markdown || wysiwyg)
+      initialValue: '',     // 내용의 초기 값으로, 반드시 마크다운 문자열 형태여야 함
+      previewStyle: 'vertical'                // 마크다운 프리뷰 스타일 (tab || vertical)
+    });
+  </script>
 </body>
 
 </html>
