@@ -297,7 +297,7 @@
         <div class="content-wrapper">
           <div class="page-header">
             <h3 class="page-title">
-              공지사항 등록
+              <b>공지사항 등록</b>
             </h3>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
@@ -313,6 +313,27 @@
               <div class="card">
                 <div class="card-body">
                   <form class="forms-sample">
+                    <div class="form-group row">
+                      <label class="col-sm-1 col-form-label">유형</label>
+                      <div class="col-sm-2">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1"
+                              value="" checked="">
+                            전체 공지
+                            <i class="input-helper"></i></label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2"
+                              value="option2">
+                            영화관 공지
+                            <i class="input-helper"></i></label>
+                        </div>
+                      </div>
+                    </div>
                     <div class="form-group">
                       <label for="exampleInputName1">제목</label>
                       <input type="text" class="form-control" id="exampleInputName1" placeholder="제목">
@@ -342,8 +363,10 @@
                         value="2024-02-20T12:30"></p>
                     </div> -->
 
-                    <button type="button" class="btn btn-gradient-primary mr-2" onclick="location.href='http://192.168.0.68:5500/admin/notice_list_knk.html';">등록</button>
-                    <button type="button" class="btn btn-light" onclick="location.href='http://192.168.0.68:5500/admin/notice_list_knk.html';">취소</button>
+                    <button type="button" class="btn btn-gradient-primary mr-2"
+                      onclick="location.href='http://192.168.0.68:5500/admin/notice_list_knk.html';">등록</button>
+                    <button type="button" class="btn btn-light"
+                      onclick="location.href='http://192.168.0.68:5500/admin/notice_list_knk.html';">취소</button>
                   </form>
                 </div>
               </div>
