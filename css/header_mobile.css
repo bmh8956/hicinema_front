@@ -1,0 +1,46 @@
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .middle-inner{
+    background-color: #fff!important;
+    height: 60px !important;
+  }
+  .top_navmenu{
+    height: 37.5px;
+  }
+  .hicinema_logo > span{
+    display : none
+  }
+  .memberInfo > li, 
+  .memberInfo > li > a, 
+  .memberInfo> li > a > i ,
+  .memberInfo> li > a > i >span{
+    display: none;
+  }
+  .header_line{
+    display: none;
+  }
+  .menu_icon{
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+}
