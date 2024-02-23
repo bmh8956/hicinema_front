@@ -1,0 +1,58 @@
+.full {
+  max-width : 100vw !important;
+}
+.hero-area4 .owl-carousel .owl-nav div {
+	height: 40px;
+	width: 40px;
+  border-radius: 50% !important;
+	line-height: 40px;
+	text-align: center;
+	background: rgba(255, 255, 255, 0) !important;
+	color: #fff !important;
+	font-size: 14px;
+	position: absolute;
+	margin: 0;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	padding: 0;
+	border-radius: 0;
+}
+.hero-area4 .owl-carousel .owl-nav div:hover{
+	background:rgba(255, 255, 255, 0.39) !important;
+	color:#9a61ae !important;
+  border-radius: 50% !important;
+}
+.hero-area4 .big-content{
+	width: 100%!important;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+    height: 420px;
+	margin-top:30px;
+	position:relative;
+}
+
+
+.big-content img {
+  /* width: 100%; */
+  /* height: auto; */
+  
+  width: 100%;
+  object-fit: cover;
+}
+/* Tablet Screen */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-area4 .big-content {
+    height: 380px;
+    margin-top: 20px;
+  }
+}
+/* Mobile Screen */
+/* Mobile Screen */
+@media only screen and (max-width: 450px) {
+  .hero-area4 .big-content {
+    height: 300px;
+    margin-top: 20px;
+  }
+}
