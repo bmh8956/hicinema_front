@@ -8733,10 +8733,13 @@
   text-align: left !important;
 }
 
-.thstate, .thcategory, .thdate {
+.thstate, .thcategory, .thdate, .thname, .thauthority {
   width: 150px;
 }
 
+.themail {
+  width: 300px;
+}
 .thmanagement {
   width: 145px;
 }
@@ -8744,6 +8747,18 @@
 .table thead th {
   vertical-align: unset !important;
   background-color: #f2edf3;
+}
+
+.searchbox {
+  width: 370px;
+  float: right;
+  margin-bottom: 15px;
+}
+
+#selectbox {
+  width: 115px;
+  height: 33px;
+  float: left;
 }
 
 .table-bordered td {
@@ -8796,6 +8811,7 @@
 }
 
 .WD-btn {
+  width: 250px;
   float: right;
   margin-bottom: 15px;
 }
