@@ -8631,12 +8631,124 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.table thead th {
-  vertical-align: unset !important;
+#clear {
+	clear: both;
 }
 
-.table-bordered th, .table-bordered td {
- padding: 10px !important;
+.box1 {
+  float: left;
+}
+
+.TOP3box {
+  width: 200px;
+  float: left;
+  
+}
+
+.card1 {
+  width: 750px;
+
+}
+
+.e1 {
+  display: flex;
+  justify-content:space-between;
+}
+.ranking {
+  text-align: center;
+  padding-top: px;
+  width: 200px;
+  height: 30px;
+  background: linear-gradient(to right, #d98bff, #9d57ff);
+  margin-bottom: 5px;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.ranking h{
+  vertical-align: middle;
+}
+
+.MVposter img {
+  width: 200px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.MVtitle {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+
+}
+.grade {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.gr_all {
+  background-image: url('../../img_knk/all.png');
+  background-size: 100%;
+}
+.gr_12 {
+  background-image: url('../../img_knk/12.png');
+  background-size: 100%;
+}
+.gr_15 {
+  background-image: url('../../img_knk/15.png');
+  background-size: 100%;
+}
+.gr_18 {
+  background-image: url('../../img_knk/18.png');
+  background-size: 100%;
+}
+
+.form-check .form-check-label {
+  margin-left: 10px !important;
+  display: inline !important;
+}
+
+.form-check .form-check-label input[type="checkbox"] + .input-helper:before {
+  margin-top: 2px !important;
+}
+.thcheckbox {
+  width: 47px;
+}
+
+.thnumber {
+  width: 60px;
+}
+
+.table th, .table td {
+  text-align: center;
+}
+
+.tdtitle {
+  text-align: left !important;
+}
+
+.thstate, .thcategory, .thdate {
+  width: 150px;
+}
+
+.thmanagement {
+  width: 145px;
+}
+
+.table thead th {
+  vertical-align: unset !important;
+  background-color: #f2edf3;
+}
+
+.table-bordered td {
+ padding-top: 7px !important;
+ padding-bottom: 7px !important;
 }
 .pagebtn {
   margin-top: 40px;
@@ -21974,7 +22086,7 @@ dl li {
   border-top: 0;
   border-bottom-width: 1px;
   font-family: "ubuntu-medium", sans-serif;
-  font-weight: initial;
+  /* font-weight: initial; */
 }
 
 .table thead th i {
