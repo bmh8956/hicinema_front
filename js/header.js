@@ -1,30 +1,12 @@
-// 상단 메뉴 고정
-const header = $(".middle-inner");
-$(window).scroll(function(){
-  if ($(this).scrollTop() > 100) {
-    header.addClass("sticky");
+let before = document.getElementById("before");
+let after = document.getElementById("after");
+
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 50) {
+    after.style.display = "block"
+    before.style.display = 'none'
   } else {
-    header.removeClass("sticky");
+    after.style.display = "none"
+    before.style.display = 'block'
   }
 });
-
-const color = $(".logologo , .memberInfo");
-$(window).scroll(function(){
-  if ($(this).scrollTop() > 100) {
-    color.addClass("sticky");
-  } else {
-    color.removeClass("sticky");
-  }
-});
-
-
-
-const color1 = $(".menuLink , .submenu");
-$(window).scroll(function(){
-  if ($(this).scrollTop() > 100) {
-    color1.addClass("sticky");
-  } else {
-    color1.removeClass("sticky");
-  }
-});
-

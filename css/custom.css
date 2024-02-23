@@ -10,3 +10,11 @@
 .team-color {
     background-color: #ff78c5b7;
 }
+
+.section {
+    padding-top: 10%;
+}
+
+#after {
+    display: none;
+}
