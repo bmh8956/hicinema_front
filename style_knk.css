@@ -59,11 +59,12 @@ Version:1.0
 	color: #000000;
 	text-align: center;
 }
+
 .login-form input {
 	width: 400px !important;
 }
 
-.input-box{
+.input-box {
 	float: left;
 }
 
@@ -285,6 +286,7 @@ ul {
 .boxoffice-btn:hover {
 	background-color: #6958ffb7;
 }
+
 .color-plate {
 	position: fixed;
 	display: block;
@@ -4453,18 +4455,24 @@ ul {
 	font-size: 14px;
 	font-weight: 400;
 }
-.sign-up, .lost-id, .lost-pass {
+
+.sign-up,
+.lost-id,
+.lost-pass {
 	margin-left: 10px;
 	margin-right: 10px;
 }
-.lost-pass  {
+
+.lost-pass {
 	display: inline-block;
 	color: #333;
 	font-size: 14px;
 	font-weight: 400;
 }
 
-.sign-up:hover, .lost-id:hover, .lost-pass:hover {
+.sign-up:hover,
+.lost-id:hover,
+.lost-pass:hover {
 	color: #612695 !important;
 }
 
@@ -5132,13 +5140,13 @@ ul {
 }
 
 .title::before {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: -1px;
-    height: 100%;
-    width: 3px;
-    background: #612695 !important;
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: -1px;
+	height: 100%;
+	width: 3px;
+	background: #612695 !important;
 }
 
 /* Blog Sidebar */
@@ -5224,24 +5232,168 @@ ul {
 	color: #fff;
 }
 
+.movieform {
+	padding-right: 0 !important;
+	border-right: hidden;
+}
+
+.reviewform {
+	padding-left: 0 !important;
+	border-left: 1px dotted #ccc;
+}
+
+.movieform form {
+	border: 1px solid #eee;
+	border-right: hidden !important;
+}
+
+.mymovie-title h:hover {
+	color: #000;
+}
+
+.myreview-title h:hover {
+	color: #000;
+}
+
+.mymovie-form {
+	padding-top: 20px;
+}
+
+.myreview-form {
+	padding-top: 20px;
+	height: 73px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.reviewform form {
+	border-left: hidden !important;
+}
+
+.form1 h3 {
+	font-size: 17px;
+	font-weight: 600;
+	float: left;
+}
+
+.mymovie-title h {
+	font-size: 12px;
+	font-weight: 100;
+	float: right;
+}
+
+.myreview-title h {
+	font-size: 12px;
+	font-weight: 100;
+	float: right;
+}
+
+/*mypage ticketing*/
+.myticketing-title {
+	margin-bottom: 30px;
+}
+
+.myticketing-title h4 {
+	font-size: 18px;
+	margin-right: 10px;
+	float: left;
+}
+
+.myticketing-title h {
+	font-size: 15px;
+	line-height: 0 !important;
+}
+
+.cancel {
+	background-color: #000;
+	color: white !important;
+	width: 150px;
+	height: 40px;
+	margin-top: 55px;
+}
+
+.cancel:hover {
+	background-color: #612695;
+}
+
+.cancelpopup {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	border: 1px solid #ccc;
+	padding: 20px;
+	z-index: 1000;
+}
+
+.amout-total {
+	float: right;
+}
+
+/* mypagemovie */
+
+.ratings {
+	width: 20px;
+	margin-right: 5px;
+	float: left;
+}
+
+.myticketing-poster {
+	margin-bottom: 15px;
+}
+
+.myticketing-poster2 {
+	margin-bottom: 15px;
+	width: 150px;
+	margin-right: 20px;
+	float: left;
+}
+
+.myticketing-form h4 {
+	font-size: 20px;
+}
+
+.myticketing-form h3 {
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.myticketing-info h {
+	font-size: 14px;
+	line-height: 30px;
+	margin-bottom: 15px;
+}
+
+.myticketing-form h4,
+.myticketing-form h {
+	color: #000;
+}
+
+.comment-title:before {
+	background: #612695 !important;
+}
+
 /* memberinfomation edit */
 .info-title {
-    font-size: 30px;
-    font-weight: 600;
-    text-transform: capitalize;
-    margin: 20px 0 20px 0;
+	font-size: 30px;
+	font-weight: 600;
+	text-transform: capitalize;
+	margin: 20px 0 20px 0;
 }
 
 .info-title2 {
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: capitalize;
-    margin: 20px 0 20px 0;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: capitalize;
+	margin: 20px 0 20px 0;
 }
 
 .info-table {
-	border-top: 1px solid #612695;
-	border-bottom: 1px solid #612695;
+	border-top: 2px solid #612695;
+	border-bottom: 2px solid #612695;
 }
 
 .info1 {
@@ -5252,16 +5404,20 @@ ul {
 	width: 150px;
 	background-color: #F2EDF3;
 }
-.info-table th, .info-table td {
+
+.info-table th,
+.info-table td {
 	padding-top: 12px;
 	padding-bottom: 12px;
 	padding-left: 15px;
 }
+
 .infobtn {
 	color: white !important;
 	float: right;
-	
+
 }
+
 .infobtn .btn {
 	background: black;
 }
@@ -5269,6 +5425,7 @@ ul {
 .infobtn .btn:hover {
 	background: #612695;
 }
+
 /* Category List */
 .main-sidebar .categor-list {
 	margin-top: 15px;
