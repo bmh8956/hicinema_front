@@ -36,7 +36,51 @@ Version:1.0
 21. Footer CSS
 ========================================*/
 
+/* register */
+.register-form h3 {
+	color: #000000;
+	text-align: center;
+}
 
+.register-form button {
+	width: 543px;
+	padding: 0 20px !important;
+	background-color: #000000 !important;
+}
+
+.register-form button:hover {
+	background-color: #612695 !important;
+}
+
+
+
+/* login */
+.login-form h3 {
+	color: #000000;
+	text-align: center;
+}
+.login-form input {
+	width: 400px !important;
+}
+
+.input-box{
+	float: left;
+}
+
+.login-form button {
+	width: 112px !important;
+	height: 112px !important;
+	margin-right: 15px !important;
+	background-color: #000000 !important;
+}
+
+.login-form button:hover {
+	background-color: #612695 !important;
+}
+
+.login-form {
+	text-align: center;
+}
 
 /* help */
 .help {
@@ -4402,17 +4446,28 @@ ul {
 	transform: scale(1);
 }
 
-.shop.login .login-form .lost-pass {
+.shop.login .login-form {
 	display: inline-block;
 	margin-left: 25px;
 	color: #333;
 	font-size: 14px;
 	font-weight: 400;
 }
-
-.shop.login .login-form .lost-pass:hover {
-	color: #F7941D;
+.sign-up, .lost-id, .lost-pass {
+	margin-left: 10px;
+	margin-right: 10px;
 }
+.lost-pass  {
+	display: inline-block;
+	color: #333;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.sign-up:hover, .lost-id:hover, .lost-pass:hover {
+	color: #612695 !important;
+}
+
 
 /*======================================
 	End Login CSS
@@ -5076,6 +5131,16 @@ ul {
 	padding-bottom: 15px;
 }
 
+.title::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -1px;
+    height: 100%;
+    width: 3px;
+    background: #612695 !important;
+}
+
 /* Blog Sidebar */
 .main-sidebar {
 	background: #fff;
@@ -5159,6 +5224,51 @@ ul {
 	color: #fff;
 }
 
+/* memberinfomation edit */
+.info-title {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 20px 0 20px 0;
+}
+
+.info-title2 {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 20px 0 20px 0;
+}
+
+.info-table {
+	border-top: 1px solid #612695;
+	border-bottom: 1px solid #612695;
+}
+
+.info1 {
+	border-bottom: 1px solid #E7D6FF;
+}
+
+.info-table th {
+	width: 150px;
+	background-color: #F2EDF3;
+}
+.info-table th, .info-table td {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 15px;
+}
+.infobtn {
+	color: white !important;
+	float: right;
+	
+}
+.infobtn .btn {
+	background: black;
+}
+
+.infobtn .btn:hover {
+	background: #612695;
+}
 /* Category List */
 .main-sidebar .categor-list {
 	margin-top: 15px;
@@ -5181,7 +5291,7 @@ ul {
 }
 
 .main-sidebar .categor-list li a:hover {
-	color: #F7941D;
+	color: #612695 !important;
 	padding-left: 7px;
 }
 
