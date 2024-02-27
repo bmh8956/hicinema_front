@@ -311,6 +311,13 @@
                   <p class="card-description1">
                     글 목록 <code>10</code>
                   </p>
+
+                  <div class="searchbox">
+                    <select class="form-control form-control-lg" id="selectbox">
+                      <option>이벤트 명</option>
+                      <option>이벤트 내용</option>
+                    </select>
+
                   <div class="WD-btn">
                     <div class="form-group">
                       <div class="input-group">
@@ -321,14 +328,17 @@
                         </div>
                       </div>
                     </div>
-                    <button type="button" class="btn btn-gradient-primary mr-2"
-                      onclick="location.href='http://192.168.0.68:5500/admin/event_write_knk.html';">
-                      <i class="mdi mdi-border-color"></i>
-                      글 쓰기</button>
-                    <button class="btn btn-light">
-                      <i class="mdi mdi-delete"></i>
-                      선택 삭제</button>
+                    <div class="btn1">
+                      <button type="button" class="btn btn-gradient-primary"
+                        onclick="location.href='http://192.168.0.68:5500/admin/notice_write_knk.html';">
+                        <i class="mdi mdi-border-color"></i>
+                        글 쓰기</button>
+                      <button class="btn btn-light">
+                        <i class="mdi mdi-delete"></i>
+                        선택 삭제</button>
+                      </div>
                   </div>
+                </div>
                   <table class="table table-bordered">
                     <thead>
                       <tr>

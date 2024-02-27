@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>공지사항 목록</title>
+  <title>예매내역</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="vendors/iconfonts/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
@@ -291,12 +291,12 @@
         <div class="content-wrapper">
           <div class="page-header">
             <h3 class="page-title">
-              <b>공지사항 목록</b>
+              <b>예매내역</b>
             </h3>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">홈페이지 관리</a></li>
-                <li class="breadcrumb-item active" aria-current="page">공지사항 목록</li>
+                <li class="breadcrumb-item"><a href="#">사용자 관리</a></li>
+                <li class="breadcrumb-item active" aria-current="page">예매내역</li>
               </ol>
             </nav>
           </div>
@@ -311,10 +311,22 @@
                   <p class="card-description1">
                     글 목록 <code>10</code>
                   </p>
+
+                  <div id="clear"></div>
+
+                  <div class="searchdate">
+                    <h>기간</h>
+                    <input type="date" id="searchdatestart" max="2040-12-31" min="2000-01-01"><h>~</h><input type="date" id="searchdateend" max="2040-12-31" min="2000-01-01">
+                  </div>
+
+
                   <div class="searchbox">
                     <select class="form-control form-control-lg" id="selectbox">
-                      <option>공지사항 명</option>
-                      <option>공지사항 내용</option>
+                      <option>예매번호</option>
+                      <option>영화 명</option>
+                      <option>회원 이름</option>
+                      <option>회원 아이디</option>
+                      <option>회원 핸드폰</option>
                     </select>
 
                   <div class="WD-btn">
@@ -327,17 +339,9 @@
                         </div>
                       </div>
                     </div>
-                    <div class="btn1">
-                      <button type="button" class="btn btn-gradient-primary"
-                        onclick="location.href='http://192.168.0.68:5500/admin/notice_write_knk.html';">
-                        <i class="mdi mdi-border-color"></i>
-                        글 쓰기</button>
-                      <button class="btn btn-light">
-                        <i class="mdi mdi-delete"></i>
-                        선택 삭제</button>
-                      </div>
                   </div>
                 </div>
+
                   <table class="table table-bordered">
                     <thead>
                       <tr>
@@ -348,20 +352,20 @@
                               <!-- <i class="input-helper"></i></label> -->
                           </div>
                         </th>
-                        <th class="thnumber">
-                          번호
-                        </th>
-                        <th class="thcategory">
-                          유형
+                        <th class="thticketingnumber">
+                          예매번호
                         </th>
                         <th class="thtitle">
-                          공지사항 명
+                          영화 명
                         </th>
-                        <th class="thstate">
-                          상태
+                        <th class="thname">
+                          이름
+                        </th>
+                        <th class="thid">
+                          아이디
                         </th>
                         <th class="thdate">
-                          등록일
+                          예매일시
                         </th>
                         <th class="thmanagement">
                           관리
@@ -378,16 +382,16 @@
                           </div>
                         </td>
                         <td>
-                          1
-                        </td>
-                        <td>
-                          전체
+                          00000000
                         </td>
                         <td class="tdtitle">
-                          하이시네마 개인정보 처리 방침 변경 안내
+                          파묘
                         </td>
                         <td>
-                          게시 중
+                          ○○○
+                        </td>
+                        <td>
+                          a1234567
                         </td>
                         <td>
                           2024.02.19
@@ -406,16 +410,16 @@
                           </div>
                         </td>
                         <td>
-                          2
-                        </td>
-                        <td>
-                          전체
+                          00000000
                         </td>
                         <td class="tdtitle">
-                          하이시네마 개인정보 처리 방침 변경 안내
+                          파묘
                         </td>
                         <td>
-                          게시 중
+                          ○○○
+                        </td>
+                        <td>
+                          a1234567
                         </td>
                         <td>
                           2024.02.19
@@ -434,16 +438,16 @@
                           </div>
                         </td>
                         <td>
-                          3
-                        </td>
-                        <td>
-                          전체
+                          00000000
                         </td>
                         <td class="tdtitle">
-                          하이시네마 개인정보 처리 방침 변경 안내
+                          파묘
                         </td>
                         <td>
-                          게시 중
+                          ○○○
+                        </td>
+                        <td>
+                          a1234567
                         </td>
                         <td>
                           2024.02.19
@@ -462,16 +466,16 @@
                           </div>
                         </td>
                         <td>
-                          4
-                        </td>
-                        <td>
-                          전체
+                          00000000
                         </td>
                         <td class="tdtitle">
-                          하이시네마 개인정보 처리 방침 변경 안내
+                          파묘
                         </td>
                         <td>
-                          게시 중
+                          ○○○
+                        </td>
+                        <td>
+                          a1234567
                         </td>
                         <td>
                           2024.02.19
@@ -490,16 +494,16 @@
                           </div>
                         </td>
                         <td>
-                          5
-                        </td>
-                        <td>
-                          전체
+                          00000000
                         </td>
                         <td class="tdtitle">
-                          하이시네마 개인정보 처리 방침 변경 안내
+                          파묘
                         </td>
                         <td>
-                          게시 중
+                          ○○○
+                        </td>
+                        <td>
+                          a1234567
                         </td>
                         <td>
                           2024.02.19
@@ -518,16 +522,16 @@
                           </div>
                         </td>
                         <td>
-                          6
-                        </td>
-                        <td>
-                          영화관
+                          00000000
                         </td>
                         <td class="tdtitle">
-                          [경주] 영업 종료 안내 - 2024년 2월 29일
+                          파묘
                         </td>
                         <td>
-                          게시 중지
+                          ○○○
+                        </td>
+                        <td>
+                          a1234567
                         </td>
                         <td>
                           2024.02.19
@@ -546,16 +550,16 @@
                           </div>
                         </td>
                         <td>
-                          7
-                        </td>
-                        <td>
-                          영화관
+                          00000000
                         </td>
                         <td class="tdtitle">
-                          [경주] 영업 종료 안내 - 2024년 2월 29일
+                          파묘
                         </td>
                         <td>
-                          게시 중지
+                          ○○○
+                        </td>
+                        <td>
+                          a1234567
                         </td>
                         <td>
                           2024.02.19
@@ -574,16 +578,16 @@
                           </div>
                         </td>
                         <td>
-                          8
-                        </td>
-                        <td>
-                          영화관
+                          00000000
                         </td>
                         <td class="tdtitle">
-                          [경주] 영업 종료 안내 - 2024년 2월 29일
+                          파묘
                         </td>
                         <td>
-                          게시 중지
+                          ○○○
+                        </td>
+                        <td>
+                          a1234567
                         </td>
                         <td>
                           2024.02.19
@@ -602,16 +606,16 @@
                           </div>
                         </td>
                         <td>
-                          9
-                        </td>
-                        <td>
-                          영화관
+                          00000000
                         </td>
                         <td class="tdtitle">
-                          [경주] 영업 종료 안내 - 2024년 2월 29일
+                          파묘
                         </td>
                         <td>
-                          게시 중지
+                          ○○○
+                        </td>
+                        <td>
+                          a1234567
                         </td>
                         <td>
                           2024.02.19
@@ -630,16 +634,16 @@
                           </div>
                         </td>
                         <td>
-                          10
-                        </td>
-                        <td>
-                          영화관
+                          00000000
                         </td>
                         <td class="tdtitle">
-                          [경주] 영업 종료 안내 - 2024년 2월 29일
+                          파묘
                         </td>
                         <td>
-                          게시 중지
+                          ○○○
+                        </td>
+                        <td>
+                          a1234567
                         </td>
                         <td>
                           2024.02.19
@@ -755,6 +759,9 @@
         }
       }
     })();
+
+    document.getElementById('searchdatestart').value=new Date().toISOString().substring(0, 10);
+    document.getElementById('searchdateend').value=new Date().toISOString().substring(0, 10);
   </script>
 
 </body>

@@ -133,7 +133,7 @@
 					<div class="blog-single-main">
 						<div class="row">
 							<div class="col-12">
-								<h2 class="info-title">개인정보 수정</h2>
+								<h2 class="info-title">회원 탈퇴</h2>
 								<table class="info-table">
 									<tbody>
 										<tr>
@@ -146,35 +146,9 @@
 										</tr>
 									</tbody>
 								</table>
-								<h class="info-title2">기본정보</h>
+								<h class="info-title2">회원 정보를 안전하게 보호하기 위해 비밀번호를 다시 확인합니다.</h>
 								<table class="info-table">
 									<tbody>
-										<tr>
-											<th class="info1">
-												이름
-											</th>
-											<td class="info1">
-												○○○
-											</td>
-										</tr>
-										<tr>
-											<th class="info1">
-												휴대폰 번호
-											</th>
-											<td class="info1">
-												<input type="text" name="phone-number" placeholder="010-0000-0000"
-													required="required">
-											</td>
-										</tr>
-										<tr>
-											<th class="info1">
-												이메일
-											</th>
-											<td class="info1">
-												<input type="text" name="email" placeholder="ooo@ooo.com"
-													required="required">
-											</td>
-										</tr>
 										<tr>
 											<th>
 												비밀번호
@@ -187,7 +161,7 @@
 									</tbody>
 								</table>
 								<div class="infobtn">
-									<a href="#" class="btn">수정</a>
+									<a href="#" class="btn" onclick="secession(); return false;">탈퇴하기</a>
 								</div>
 							</div>
 							
@@ -235,6 +209,17 @@
 		<script src="js/easing.js"></script>
 		<!-- Active JS -->
 		<script src="js/active.js"></script>
+
+		<script>
+			function secession() {
+				if (confirm('탈퇴하시겠습니까?')) {
+                    alert ("탈퇴가 완료되었습니다.");
+                    location.href ="main_knk.html";
+                } else {
+                    alert("취소되었습니다.");
+                }
+            }
+		</script>
 </body>
 
 </html>
