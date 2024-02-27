@@ -5259,6 +5259,10 @@ ul {
 	padding-top: 20px;
 }
 
+.mymovie-form img, .myreview-form img {
+	width: 24px;
+}
+
 .myreview-form {
 	padding-top: 20px;
 	height: 73px;
@@ -5317,21 +5321,40 @@ ul {
 	background-color: #612695;
 }
 
-.cancelpopup {
-	display: none;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-color: white;
-	border: 1px solid #ccc;
-	padding: 20px;
-	z-index: 1000;
-}
-
 .amout-total {
 	float: right;
 }
+
+.mypage {
+	background-color: #612695;
+	color: #fff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 18px;
+	text-align: center;
+}
+
+/* id/pw find */
+
+.find-btn {
+	padding: 15px;
+}
+
+.find-btn .btn {
+	width: 100%;
+	background-color: #000;
+}
+
+.find-btn .btn:hover {
+	background-color: #a7a7a7 !important;
+}
+
+.nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #a7a7a7;
+    border-color: #ddd #ddd #fff;
+}
+
 
 /* mypagemovie */
 

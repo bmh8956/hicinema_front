@@ -324,23 +324,29 @@
                     </div>
                     <!-- <label for="exampleTextarea1">내용</label>
                       <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>-->
-                    <div class="form-group">
-                      <label for="state">상태</label>
-                      <select class="form-control" id="state">
-                        <option>게시 중</option>
-                        <option>게시 중지</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="eventstart">시작일</label><p>
-                      <input type="datetime-local" id="eventstart" max="2040-12-31T23:59" min="2024-02-20T12:30"
-                        value="2024-02-20T12:30"></p>
-                    </div>
-                    <div class="form-group">
-                      <label for="eventend">종료일</label><p>
-                      <input type="datetime-local" id="eventend" max="2040-12-31T23:59" min="2024-02-20T12:30"
-                        value="2024-02-20T12:30"></p>
-                    </div>
+                      <div class="form-group stateoption">
+                        <label for="state">상태</label>
+                        <select class="form-control" id="state">
+                          <option>게시 중</option>
+                          <option>게시 중지</option>
+                        </select>
+                      </div>
+                      <div class="eventdate">
+                        <div class="form-group">
+                          <label for="eventdatestart">시작일</label>
+                          <p>
+                            <input type="datetime-local" id="eventdatestart" max="2040-12-31T23:59" min="2024-02-20T12:30"
+                              value="2024-02-20T12:30">
+                          </p>
+                        </div>
+                        <div class="form-group">
+                          <label for="eventdateend">종료일</label>
+                          <p>
+                            <input type="datetime-local" id="eventdateend" max="2040-12-31T23:59" min="2024-02-20T12:30"
+                              value="2024-02-20T12:30">
+                          </p>
+                        </div>
+                      </div>
 
                     <button type="button" class="btn btn-gradient-primary mr-2" onclick="location.href='http://192.168.0.68:5500/admin/event_list_knk.html';">등록</button>
                     <button type="button" class="btn btn-light" onclick="location.href='http://192.168.0.68:5500/admin/event_list_knk.html';">취소</button>
@@ -405,6 +411,10 @@
       initialValue: '',     // 내용의 초기 값으로, 반드시 마크다운 문자열 형태여야 함
       previewStyle: 'vertical'                // 마크다운 프리뷰 스타일 (tab || vertical)
     });
+
+    
+    document.getElementById('eventdatestart').value=new Date().toISOString().slice(0, -8);
+    document.getElementById('eventdateend').value=new Date().toISOString().slice(0, -8);
   </script>
 </body>
 

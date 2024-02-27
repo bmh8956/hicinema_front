@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>공지사항 목록</title>
+  <title>탈퇴회원 목록</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="vendors/iconfonts/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
@@ -291,12 +291,12 @@
         <div class="content-wrapper">
           <div class="page-header">
             <h3 class="page-title">
-              <b>공지사항 목록</b>
+              <b>탈퇴회원 목록</b>
             </h3>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">홈페이지 관리</a></li>
-                <li class="breadcrumb-item active" aria-current="page">공지사항 목록</li>
+                <li class="breadcrumb-item"><a href="#">회원 관리</a></li>
+                <li class="breadcrumb-item active" aria-current="page">탈퇴회원 목록</li>
               </ol>
             </nav>
           </div>
@@ -309,59 +309,60 @@
               <div class="card">
                 <div class="card-body">
                   <p class="card-description1">
-                    글 목록 <code>10</code>
+                    탈퇴회원 목록 <code>10</code>
                   </p>
+                  
                   <div class="searchbox">
-                    <select class="form-control form-control-lg" id="selectbox">
-                      <option>공지사항 명</option>
-                      <option>공지사항 내용</option>
-                    </select>
-
+                  <select class="form-control form-control-lg" id="selectbox">
+                    <option>이름</option>
+                    <option>아이디</option>
+                    <option>휴대폰 번호</option>
+                    <option>이메일</option>
+                  </select>
+                  
                   <div class="WD-btn">
+                    
                     <div class="form-group">
                       <div class="input-group">
                         <input type="text" class="form-control" placeholder="
-                        " aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        " aria-label="Recipient's username" aria-describedby="basic-addon">
                         <div class="input-group-append">
                           <button class="btn btn-sm btn-gradient-primary" type="button">검색</button>
                         </div>
                       </div>
                     </div>
-                    <div class="btn1">
-                      <button type="button" class="btn btn-gradient-primary"
-                        onclick="location.href='http://192.168.0.68:5500/admin/notice_write_knk.html';">
-                        <i class="mdi mdi-border-color"></i>
-                        글 쓰기</button>
-                      <button class="btn btn-light">
-                        <i class="mdi mdi-delete"></i>
-                        선택 삭제</button>
-                      </div>
                   </div>
-                </div>
+                  </div>
                   <table class="table table-bordered">
                     <thead>
                       <tr>
                         <th class="thcheckbox">
-                          <div class="form-check">
+                          <div class="form-check ">
                             <label class="form-check-label">
                               <input type="checkbox" class="form-check-input all_check">
-                              <!-- <i class="input-helper"></i></label> -->
+                              <i class="input-helper"></i></label>
                           </div>
                         </th>
                         <th class="thnumber">
                           번호
                         </th>
-                        <th class="thcategory">
-                          유형
+                        <th class="thid">
+                          아이디
                         </th>
-                        <th class="thtitle">
-                          공지사항 명
+                        <th class="thname">
+                          이름
                         </th>
-                        <th class="thstate">
-                          상태
+                        <th class="themail">
+                          이메일
                         </th>
                         <th class="thdate">
-                          등록일
+                          가입일
+                        </th>
+                        <th class="thdate">
+                          탈퇴일
+                        </th>
+                        <th class="thauthority">
+                          권한
                         </th>
                         <th class="thmanagement">
                           관리
@@ -377,23 +378,29 @@
                               <i class="input-helper"></i></label>
                           </div>
                         </td>
-                        <td>
+                        <td class="thnumber">
                           1
                         </td>
                         <td>
-                          전체
-                        </td>
-                        <td class="tdtitle">
-                          하이시네마 개인정보 처리 방침 변경 안내
+                          a123456789
                         </td>
                         <td>
-                          게시 중
+                          홍길동
                         </td>
                         <td>
-                          2024.02.19
+                          aaa@aaa.com
                         </td>
                         <td>
-                          <button type="button" class="btn btn-outline-secondary btn-sm" onclick="location.href='http://192.168.0.68:5500/admin/notice_edit_knk.html';">수정</button>
+                          2024.02.20
+                        </td>
+                        <td>
+                          2024.02.28
+                        </td>
+                        <td>
+                          탈퇴회원
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary btn-sm" onclick="location.href='http://192.168.0.68:5500/admin/event_edit_knk.html';">수정</button>
                           <button type="button" class="btn btn-gradient-primary btn-sm">삭제</button>
                         </td>
                       </tr>
@@ -405,23 +412,29 @@
                               <i class="input-helper"></i></label>
                           </div>
                         </td>
-                        <td>
+                        <td class="thnumber">
                           2
                         </td>
                         <td>
-                          전체
-                        </td>
-                        <td class="tdtitle">
-                          하이시네마 개인정보 처리 방침 변경 안내
+                          a123456789
                         </td>
                         <td>
-                          게시 중
+                          홍길동
                         </td>
                         <td>
-                          2024.02.19
+                          aaa@aaa.com
                         </td>
                         <td>
-                          <button type="button" class="btn btn-outline-secondary btn-sm" onclick="location.href='http://192.168.0.68:5500/admin/notice_edit_knk.html';">수정</button>
+                          2024.02.20
+                        </td>
+                        <td>
+                          2024.02.28
+                        </td>
+                        <td>
+                          탈퇴회원
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary btn-sm" onclick="location.href='http://192.168.0.68:5500/admin/event_edit_knk.html';">수정</button>
                           <button type="button" class="btn btn-gradient-primary btn-sm">삭제</button>
                         </td>
                       </tr>
@@ -433,23 +446,29 @@
                               <i class="input-helper"></i></label>
                           </div>
                         </td>
-                        <td>
+                        <td class="thnumber">
                           3
                         </td>
                         <td>
-                          전체
-                        </td>
-                        <td class="tdtitle">
-                          하이시네마 개인정보 처리 방침 변경 안내
+                          a123456789
                         </td>
                         <td>
-                          게시 중
+                          홍길동
                         </td>
                         <td>
-                          2024.02.19
+                          aaa@aaa.com
                         </td>
                         <td>
-                          <button type="button" class="btn btn-outline-secondary btn-sm" onclick="location.href='http://192.168.0.68:5500/admin/notice_edit_knk.html';">수정</button>
+                          2024.02.20
+                        </td>
+                        <td>
+                          2024.02.28
+                        </td>
+                        <td>
+                          탈퇴회원
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary btn-sm" onclick="location.href='http://192.168.0.68:5500/admin/event_edit_knk.html';">수정</button>
                           <button type="button" class="btn btn-gradient-primary btn-sm">삭제</button>
                         </td>
                       </tr>
@@ -461,23 +480,29 @@
                               <i class="input-helper"></i></label>
                           </div>
                         </td>
-                        <td>
+                        <td class="thnumber">
                           4
                         </td>
                         <td>
-                          전체
-                        </td>
-                        <td class="tdtitle">
-                          하이시네마 개인정보 처리 방침 변경 안내
+                          a123456789
                         </td>
                         <td>
-                          게시 중
+                          홍길동
                         </td>
                         <td>
-                          2024.02.19
+                          aaa@aaa.com
                         </td>
                         <td>
-                          <button type="button" class="btn btn-outline-secondary btn-sm" onclick="location.href='http://192.168.0.68:5500/admin/notice_edit_knk.html';">수정</button>
+                          2024.02.20
+                        </td>
+                        <td>
+                          2024.02.28
+                        </td>
+                        <td>
+                          탈퇴회원
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary btn-sm" onclick="location.href='http://192.168.0.68:5500/admin/event_edit_knk.html';">수정</button>
                           <button type="button" class="btn btn-gradient-primary btn-sm">삭제</button>
                         </td>
                       </tr>
@@ -489,23 +514,29 @@
                               <i class="input-helper"></i></label>
                           </div>
                         </td>
-                        <td>
+                        <td class="thnumber">
                           5
                         </td>
                         <td>
-                          전체
-                        </td>
-                        <td class="tdtitle">
-                          하이시네마 개인정보 처리 방침 변경 안내
+                          a123456789
                         </td>
                         <td>
-                          게시 중
+                          홍길동
                         </td>
                         <td>
-                          2024.02.19
+                          aaa@aaa.com
                         </td>
                         <td>
-                          <button type="button" class="btn btn-outline-secondary btn-sm" onclick="location.href='http://192.168.0.68:5500/admin/notice_edit_knk.html';">수정</button>
+                          2024.02.20
+                        </td>
+                        <td>
+                          2024.02.28
+                        </td>
+                        <td>
+                          탈퇴회원
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary btn-sm" onclick="location.href='http://192.168.0.68:5500/admin/event_edit_knk.html';">수정</button>
                           <button type="button" class="btn btn-gradient-primary btn-sm">삭제</button>
                         </td>
                       </tr>
@@ -517,23 +548,29 @@
                               <i class="input-helper"></i></label>
                           </div>
                         </td>
-                        <td>
+                        <td class="thnumber">
                           6
                         </td>
                         <td>
-                          영화관
-                        </td>
-                        <td class="tdtitle">
-                          [경주] 영업 종료 안내 - 2024년 2월 29일
+                          a123456789
                         </td>
                         <td>
-                          게시 중지
+                          홍길동
                         </td>
                         <td>
-                          2024.02.19
+                          aaa@aaa.com
                         </td>
                         <td>
-                          <button type="button" class="btn btn-outline-secondary btn-sm" onclick="location.href='http://192.168.0.68:5500/admin/notice_edit_knk.html';">수정</button>
+                          2024.02.20
+                        </td>
+                        <td>
+                          2024.02.28
+                        </td>
+                        <td>
+                          탈퇴회원
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary btn-sm" onclick="location.href='http://192.168.0.68:5500/admin/event_edit_knk.html';">수정</button>
                           <button type="button" class="btn btn-gradient-primary btn-sm">삭제</button>
                         </td>
                       </tr>
@@ -545,23 +582,29 @@
                               <i class="input-helper"></i></label>
                           </div>
                         </td>
-                        <td>
+                        <td class="thnumber">
                           7
                         </td>
                         <td>
-                          영화관
-                        </td>
-                        <td class="tdtitle">
-                          [경주] 영업 종료 안내 - 2024년 2월 29일
+                          a123456789
                         </td>
                         <td>
-                          게시 중지
+                          홍길동
                         </td>
                         <td>
-                          2024.02.19
+                          aaa@aaa.com
                         </td>
                         <td>
-                          <button type="button" class="btn btn-outline-secondary btn-sm" onclick="location.href='http://192.168.0.68:5500/admin/notice_edit_knk.html';">수정</button>
+                          2024.02.20
+                        </td>
+                        <td>
+                          2024.02.28
+                        </td>
+                        <td>
+                          탈퇴회원
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary btn-sm" onclick="location.href='http://192.168.0.68:5500/admin/event_edit_knk.html';">수정</button>
                           <button type="button" class="btn btn-gradient-primary btn-sm">삭제</button>
                         </td>
                       </tr>
@@ -573,23 +616,29 @@
                               <i class="input-helper"></i></label>
                           </div>
                         </td>
-                        <td>
+                        <td class="thnumber">
                           8
                         </td>
                         <td>
-                          영화관
-                        </td>
-                        <td class="tdtitle">
-                          [경주] 영업 종료 안내 - 2024년 2월 29일
+                          a123456789
                         </td>
                         <td>
-                          게시 중지
+                          홍길동
                         </td>
                         <td>
-                          2024.02.19
+                          aaa@aaa.com
                         </td>
                         <td>
-                          <button type="button" class="btn btn-outline-secondary btn-sm" onclick="location.href='http://192.168.0.68:5500/admin/notice_edit_knk.html';">수정</button>
+                          2024.02.20
+                        </td>
+                        <td>
+                          2024.02.28
+                        </td>
+                        <td>
+                          탈퇴회원
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary btn-sm" onclick="location.href='http://192.168.0.68:5500/admin/event_edit_knk.html';">수정</button>
                           <button type="button" class="btn btn-gradient-primary btn-sm">삭제</button>
                         </td>
                       </tr>
@@ -601,23 +650,29 @@
                               <i class="input-helper"></i></label>
                           </div>
                         </td>
-                        <td>
+                        <td class="thnumber">
                           9
                         </td>
                         <td>
-                          영화관
-                        </td>
-                        <td class="tdtitle">
-                          [경주] 영업 종료 안내 - 2024년 2월 29일
+                          a123456789
                         </td>
                         <td>
-                          게시 중지
+                          홍길동
                         </td>
                         <td>
-                          2024.02.19
+                          aaa@aaa.com
                         </td>
                         <td>
-                          <button type="button" class="btn btn-outline-secondary btn-sm" onclick="location.href='http://192.168.0.68:5500/admin/notice_edit_knk.html';">수정</button>
+                          2024.02.20
+                        </td>
+                        <td>
+                          2024.02.28
+                        </td>
+                        <td>
+                          탈퇴회원
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary btn-sm" onclick="location.href='http://192.168.0.68:5500/admin/event_edit_knk.html';">수정</button>
                           <button type="button" class="btn btn-gradient-primary btn-sm">삭제</button>
                         </td>
                       </tr>
@@ -629,26 +684,33 @@
                               <i class="input-helper"></i></label>
                           </div>
                         </td>
-                        <td>
+                        <td class="thnumber">
                           10
                         </td>
                         <td>
-                          영화관
-                        </td>
-                        <td class="tdtitle">
-                          [경주] 영업 종료 안내 - 2024년 2월 29일
+                          a123456789
                         </td>
                         <td>
-                          게시 중지
+                          홍길동
                         </td>
                         <td>
-                          2024.02.19
+                          aaa@aaa.com
                         </td>
                         <td>
-                          <button type="button" class="btn btn-outline-secondary btn-sm" onclick="location.href='http://192.168.0.68:5500/admin/notice_edit_knk.html';">수정</button>
+                          2024.02.20
+                        </td>
+                        <td>
+                          2024.02.28
+                        </td>
+                        <td>
+                          탈퇴회원
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary btn-sm" onclick="location.href='http://192.168.0.68:5500/admin/event_edit_knk.html';">수정</button>
                           <button type="button" class="btn btn-gradient-primary btn-sm">삭제</button>
                         </td>
                       </tr>
+
                     </tbody>
                   </table>
                   <div class="pagebtn">
@@ -673,15 +735,7 @@
           </div>
         </div>
         <!-- content-wrapper ends -->
-        <!-- partial:../../partials/_footer.html -->
-        <footer class="footer">
-          <div class="d-sm-flex justify-content-center justify-content-sm-between">
-            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2017 <a
-                href="https://www.bootstrapdash.com/" target="_blank">Bootstrap Dash</a>. All rights reserved.</span>
-            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i
-                class="mdi mdi-heart text-danger"></i></span>
-          </div>
-        </footer>
+
         <!-- partial -->
       </div>
       <!-- main-panel ends -->
@@ -712,7 +766,6 @@
       // 여기에 다음 페이지로 이동하는 코드를 추가하세요
       // 예: window.location.href = "다음 페이지 URL";
     }
-
 
     // custom js - bmh (체크박스 - table 형식의 리스트)
     (function () {
@@ -755,7 +808,9 @@
         }
       }
     })();
+
   </script>
+
 
 </body>
 

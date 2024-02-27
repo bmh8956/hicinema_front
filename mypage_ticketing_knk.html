@@ -83,42 +83,63 @@
             <div class="row">
                 <div class="col-lg-3 col-12">
                     <div class="main-sidebar">
-                        <!-- Single Widget -->
-                        <div class="single-widget category">
-                            <h3 class="title">나의 예매내역</h3>
-                            <ul class="categor-list">
-                                <li><a href="#">예매내역</a></li>
-                                <li><a href="#">취소내역</a></li>
-                            </ul>
-                        </div>
-                        <!--/ End Single Widget -->
-                        <!-- Single Widget -->
-                        <div class="single-widget category">
-                            <h3 class="title">회원정보</h3>
-                            <ul class="categor-list">
-                                <li><a href="#">개인정보 수정</a></li>
-                                <li><a href="#">회원탈퇴</a></li>
-                            </ul>
-                        </div>
-                        <!--/ End Single Widget -->
-                        <!-- Single Widget -->
-                        <div class="single-widget category">
-                            <h3 class="title">나의 문의내역</h3>
-                            <ul class="categor-list">
-                                <li><a href="#">1:1 문의</a></li>
-                            </ul>
-                        </div>
-                        <!--/ End Single Widget -->
-                        <!-- Single Widget -->
-                        <div class="single-widget category">
-                            <h3 class="title">내가 본 영화</h3>
-                            <ul class="categor-list">
-                                <li><a href="#">내가 본 영화</a></li>
-                                <li><a href="#">내가 쓴 평점</a></li>
-                            </ul>
-                        </div>
-                        <!--/ End Single Widget -->
-                    </div>
+						<!-- Single Widget -->
+						<div class="single-widget">
+							<a href="mypage_knk.html"><h2 class="mypage">마이페이지</h2></a>
+						</div>
+						<!--/ End Single Widget -->
+						
+						<!-- Single Widget -->
+						<div class="single-widget category">
+							<h3 class="title">나의 예매내역</h3>
+							<ul class="categor-list">
+								<li><a href="mypage_ticketing_knk.html">예매내역</a></li>
+								<li><a href="mypage_ticketing_cancel_knk.html">취소내역</a></li>
+							</ul>
+						</div>
+						<!--/ End Single Widget -->
+
+						
+
+						<!-- Single Widget -->
+						<div class="single-widget category">
+							<h3 class="title">내가 본 영화</h3>
+							<ul class="categor-list">
+								<li><a href="#">내가 본 영화</a></li>
+								<li><a href="#">내가 쓴 평점</a></li>
+							</ul>
+						</div>
+						<!--/ End Single Widget -->
+						
+						<!-- Single Widget -->
+						<div class="single-widget category">
+							<h3 class="title">스토어</h3>
+							<ul class="categor-list">
+								<li><a href="#">결제내역</a></li>
+							</ul>
+						</div>
+						<!--/ End Single Widget -->
+						
+
+						<!-- Single Widget -->
+						<div class="single-widget category">
+							<h3 class="title">회원정보</h3>
+							<ul class="categor-list">
+								<li><a href="mypage_infoedit_knk.html">개인정보 수정</a></li>
+								<li><a href="mypage_secession_knk.html">회원탈퇴</a></li>
+							</ul>
+						</div>
+						<!--/ End Single Widget -->
+						<!-- Single Widget -->
+						<div class="single-widget category">
+							<h3 class="title">나의 문의내역</h3>
+							<ul class="categor-list">
+								<li><a href="#">1:1 문의</a></li>
+							</ul>
+						</div>
+						<!--/ End Single Widget -->
+						
+					</div>
                 </div>
                 <div class="col-lg-9 col-12">
                     <div class="myticketing">
@@ -150,7 +171,7 @@
                                                             <p>
                                                                 <h><b>좌석</b> B7</h>
                                                             <p>
-                                                                <button class="cancel" onclick="showPopup()">예매
+                                                                <button class="cancel" onclick="cancel(); return false;">예매
                                                                     취소</button>
                                                             </div>
                                                             <div id="clear"></div>
@@ -170,12 +191,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Moved the pop up outside the form -->
-                    <div class="cancelpopup">
-                        <p>결제를 취소하시겠습니까?</p>
-                        <button onclick="cancelPayment()">예</button>
-                        <button onclick="hidePopup()">아니요</button>
                     </div>
                 </div>
             </div>
@@ -221,27 +236,12 @@
         <script src="js/active.js"></script>
 
         <script>
-            function showPopup() {
-                document.getElementById('cancelpopup').style.display = 'block';
-                // overlay 클릭 이벤트 추가
-                document.addEventListener('click', closePopupOutside);
-            }
-
-            function hidePopup() {
-                document.getElementById('cancelpopup').style.display = 'none';
-                // overlay 클릭 이벤트 제거
-                document.removeEventListener('click', closePopupOutside);
-            }
-
-            function cancelPayment() {
-                hidePopup();
-                alert('결제가 취소되었습니다.');
-            }
-
-            function closePopupOutside(event) {
-                // 팝업 요소와 클릭된 요소가 팝업 요소 자신이거나 팝업 요소의 자식 요소인 경우에는 팝업을 닫지 않음
-                if (!document.getElementById('cancelpopup').contains(event.target)) {
-                    hidePopup();
+            function cancel() {
+                if (confirm('예매를 취소하시겠습니까?')) {
+                    alert ("예매 취소가 완료되었습니다.");
+                    location.href ="mypage_ticketing_cancel_knk.html";
+                } else {
+                    alert("취소되었습니다.");
                 }
             }
         </script>
