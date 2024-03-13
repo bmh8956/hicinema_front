@@ -36,6 +36,46 @@ Version:1.0
 21. Footer CSS
 ========================================*/
 
+.ticketing-form {
+	padding: 40px;
+    border: 1px solid #c5c5c5;
+	background-color: white;
+}
+
+.ticketingdetails {
+	display: flex;
+	justify-content: center;
+}
+
+/* ticketing details */
+.ticketingBtn{
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.storeBtn {
+	background-color: #4e4e4e;
+	color: white;
+}
+
+.mainBtn {
+	background-color: #612695;
+	color: white;
+}
+	
+.ticketingBtn button{
+	margin-top: 30px !important;
+	margin: 15px;
+	width: 200px;
+	height: 45px;
+	font-size: 15px;
+	border: none;
+}
+
+.ticketingBtn button:hover {
+	border: 2px solid black;
+}
+
 /* register */
 .register-form h3 {
 	color: #000000;
@@ -5399,6 +5439,84 @@ ul {
 	background: #612695 !important;
 }
 
+/* store_detail */
+.ordercancel {
+	width: 150px;
+	height: 40px;
+	background-color: #000;
+	color: white;
+}
+
+.ordercancel:hover {
+	background-color: #612695;
+}
+
+.store-table .orderinfo {
+	width: 40%;
+}
+
+/* store */
+.mypage-order table {
+	border-top: 2px solid #612695;
+	border-bottom: 2px solid #612695;
+	text-align: center;
+}
+
+.mypage-order table th {
+	width: 150px;
+	background-color: #F2EDF3;
+}
+
+.mypage-order table td {
+	width: 150px;
+	text-align: left;
+	padding-left: 30px;
+}
+
+.mypage-order table th,
+.mypage-order table td {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.mypage-order .orderleft {
+	text-align: left;
+	padding-left: 15px;
+}
+
+.mypage-order .ordercenter {
+	text-align: center;
+	width: 17%;
+}
+
+.mypage-order .orderright {
+	text-align: right;
+	padding-right: 30px;
+}
+.store-table .ordername {
+	text-align: left !important;
+}
+
+.store-table img{
+	width: 150px;
+}
+.store-table {
+	border-top: 2px solid #612695;
+	border-bottom: 2px solid #612695;
+	text-align: center;
+}
+
+.store-table th {
+	width: 150px;
+	background-color: #F2EDF3;
+}
+
+.store-table th,
+.store-table td {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
 /* memberinfomation edit */
 .info-title {
 	font-size: 30px;
@@ -5453,8 +5571,6 @@ ul {
 .main-sidebar .categor-list {
 	margin-top: 15px;
 }
-
-.main-sidebar .categor-list li {}
 
 .main-sidebar .categor-list li {
 	margin-bottom: 10px;
